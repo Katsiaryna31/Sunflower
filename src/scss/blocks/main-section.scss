@@ -1,0 +1,52 @@
+.main-section {
+    display: flex;
+    background: #FCE2CF url('../assets/images/grass.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    
+    padding: 0 85px;
+}
+
+.main-container {
+    padding-left: 115px;
+    margin-top: -150px;
+}
+
+.main-header {
+    font-family: Amatic, Arial, sans-serif;
+    font-size: 64px;
+    line-height: 140%;
+    color: #3E3C3C;
+    width: 600px;
+}
+
+.main-header span {
+    color: #FF6F3C;
+}
+
+.main-description {
+    font-family: Oswald-Light, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 140%;
+    color: #3E3C3C;
+    padding-bottom: 53px;
+}
+
+.main-button {
+    font-family: Oswald-Medium, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    color: #3E3C3C;
+    text-decoration: none;
+    padding: 12px 47px;
+    background: #FF6F3C;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15), -5px -5px 10px rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+}
+
+.earth-image {
+    margin-top: -170px;
+    margin-left: -330px;
+    padding-bottom: 120px;
+}

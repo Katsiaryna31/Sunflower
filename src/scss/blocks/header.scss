@@ -1,0 +1,35 @@
+.header {
+    width: 100%;
+    @include zero-space ();
+    background: url('../assets/images/sky.png') #FCE2CF;
+    padding-top: 30px;
+    height: 342px;
+    z-index: 10;
+}
+
+.header-phone {
+    position: relative;
+    float: right;
+    padding-right: 20%;
+}
+
+.header-phone a {
+    font-family: Oswald-Medium, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 140%;
+    color: #111111;
+    text-decoration: none;
+    border: 2px solid #FF6F3C;
+    border-radius: 9px; 
+    padding: 10px 15px 12px 30px;
+}
+
+.header-phone::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 21px;
+    height: 24px;
+    background: url('../assets/images/phone.png');
+}

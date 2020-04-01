@@ -1,0 +1,11 @@
+{
+    "transform": {
+        "^.+\\.svg$": "./svgTransform.js",
+        "^.+\\.js$": "babel-jest"
+    },
+    "verbose": true,
+    "moduleDirectories": [
+        "node_modules",
+        "src"
+    ]
+}
