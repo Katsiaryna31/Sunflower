@@ -1,23 +1,26 @@
 .main-section {
+    background: linear-gradient(to bottom, #FCE2CF 0%, #FCE2CF 90%, #fff 90%, #fff 100%);
+}
+
+.main-wrapper {
     display: flex;
-    background: #FCE2CF url('../assets/images/grass.png');
-    background-repeat: no-repeat;
-    background-position: bottom;
-    
+    justify-content: center;
     padding: 0 85px;
 }
 
 .main-container {
-    padding-left: 115px;
+    width: 50%;
     margin-top: -150px;
+    margin-right: -20%;
+    z-index: 3;
 }
 
 .main-header {
     font-family: Amatic, Arial, sans-serif;
-    font-size: 64px;
+    font-size: 4vw;
     line-height: 140%;
     color: #3E3C3C;
-    width: 600px;
+    width: 90%;
 }
 
 .main-header span {
@@ -29,7 +32,8 @@
     font-size: 24px;
     line-height: 140%;
     color: #3E3C3C;
-    padding-bottom: 53px;
+    padding-bottom: 5%;
+    width: 80%;
 }
 
 .main-button {
@@ -47,6 +51,16 @@
 
 .earth-image {
     margin-top: -170px;
-    margin-left: -330px;
-    padding-bottom: 120px;
+    width: 62.5%;
+    height: auto;
+    z-index: 3;
+}
+
+.main-grass {
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(to bottom, #FCE2CF 0%, #FCE2CF 50%, #fff 50%, #fff 100%);
+    margin-top: -20%;
+    padding: 0;
+    z-index: -2;
 }

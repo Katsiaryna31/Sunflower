@@ -1,5 +1,6 @@
 import './scss/main.scss';
 import earth from './assets/images/earth.png';
+import grass from './assets/images/grass.png';
 import aboutusImage from './assets/images/aboutus-photo.jpg';
 import babyImage from './assets/images/baby.png';
 import childImage from './assets/images/child.png';
@@ -10,6 +11,9 @@ import bell from './assets/images/bell.png';
 
 const earthImage = document.querySelector('.earth-image');
 earthImage.src = earth;
+
+const mainGrass = document.querySelector('.main-grass');
+mainGrass.src = grass;
 
 const aboutImage = document.querySelector('.about-us-photo');
 aboutImage.src = aboutusImage;
