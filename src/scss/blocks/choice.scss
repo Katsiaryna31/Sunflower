@@ -1,0 +1,75 @@
+#choice {
+    background: #F4F4F4;
+    max-width: 945px;
+    margin: 0 auto;
+    margin-bottom: -90px;
+}
+
+.choice-header {
+    margin: 0;
+    @include header-h1;
+    text-align: center;
+}
+
+.choice-header span {
+    color: #FF6F3C;
+}
+
+.choice-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.choice-item {
+    padding: 204px 29px 30px;
+    background: #F7F2F2;
+    box-shadow: 10px 10px 10px rgba(62, 60, 60, 0.15), -10px -10px 10px rgba(255, 255, 255, 0.25);
+    border-radius: 22px;
+    width: 183px;
+    margin-bottom: 70px;
+    position: relative;
+
+    font-family: Oswald-Light, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #3E3C3C;
+}
+
+.choice-item::before {
+    position: absolute;
+    content:'';
+    top: 25px;
+    left: 40px;
+    width: 160px;
+    height: 160px;
+    background-repeat: no-repeat;
+}
+
+.choice-item--individual::before {
+    background: url('../assets/images/individual.png');
+}
+
+.choice-item--hours::before {
+    background: url('../assets/images/alarm.png');
+}
+
+.choice-item--outside::before {
+    background: url('../assets/images/bus.png');
+}
+
+.choice-item--area::before {
+    background: url('../assets/images/school.png');
+}
+
+.choice-item--home::before {
+    background: url('../assets/images/house.png');
+}
+
+.choice-item--food::before {
+    background: url('../assets/images/food.png');
+}

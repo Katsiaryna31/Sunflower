@@ -1,0 +1,79 @@
+#activities {
+    background: url('../assets/images/children-background.png') top repeat-x,
+                linear-gradient(360deg, #FFFFFF 5.25%, rgba(255, 255, 255, 0) 36%),
+                url('../assets/images/activities.png') no-repeat;
+    background-size: 100%;
+}
+
+.activities-header {
+    margin: 0;
+    padding: 109px 0 51px;
+    @include header-h1;
+    text-align: center;
+}
+
+.activities-header span {
+    color: #FF6F3C;
+}
+
+.activities-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 62.5%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.activities-item {
+    width: 29.4%;
+    box-sizing: border-box;
+    text-align: center;
+    @include header-h2;
+    padding-top: 20px;
+    padding-bottom: 23%;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    box-shadow: 10px 10px 20px rgba(62, 60, 60, 0.15), -10px -10px 20px rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    margin-bottom: 47px;
+}
+
+.activities-item a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.activities-item:nth-child(4) {
+    width: 1190px;
+}
+
+.activities-item-sport {
+    background: url('../assets/images/sport.png');
+}
+
+.activities-item-motor {
+    background: url('../assets/images/motor.png');
+}
+
+.activities-item-languages {
+    background: url('../assets/images/languages.png');
+}
+
+.activities-item-preschool {
+    background: url('../assets/images/preschool.png');
+}
+
+.activities-item-creative {
+    background: url('../assets/images/creative.png');
+}
+
+.activities-item-music {
+    background: url('../assets/images/music.png');
+}
+
+.activities-item-cooking {
+    background: url('../assets/images/cooking.png');
+}

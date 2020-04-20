@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="preload" href="assets/fonts/AmaticSC-Bold.ttf" as="ttf" crossorigin="anonymous">
-    <link rel="preload" href="assets/fonts/Oswald-Light.ttf" as="ttf" crossorigin="anonymous">
-    <link rel="preload" href="assets/fonts/Oswald-Medium.ttf" as="ttf" crossorigin="anonymous">
-    <link rel="preload" href="assets/fonts/Oswald-Regular.ttf" as="ttf" crossorigin="anonymous">
+    <link rel="preload" href="assets/fonts/AmaticSC-Bold.ttf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="assets/fonts/Oswald-Light.ttf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="assets/fonts/Oswald-Medium.ttf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="assets/fonts/Oswald-Regular.ttf" as="font" crossorigin="anonymous">
     <title>Sunflower</title>
 </head>
 <body> 
@@ -51,25 +51,27 @@
             </div>
             <img class="main-grass" alt="grass">
         </section>
-        <section id="#about-us">
-            <h2 class="about-us-header">Про нас</h2>
+        <section id="about-us">
             <div class="about-experience">
-                <p class="about-experience-group">Група створена пани Мартою, яка має вищу освіту дитячого психолога. За плечима:</p>
-                <ul class="experience-list">
-                    <li class="experience-item">Досвід роботи в якості викладача в державного садка на Україні;</li>
-                    <li class="experience-item">Досвід роботи в якості вихователя в дитячому саду в Польщі у Варшаві;</li>
-                    <li class="experience-item">Досвід організації дитячого садка в Німеччині;</li>
-                </ul>
+                <div class="about-container">
+                    <p class="about-experience-group">Група створена <span>пани Мартою</span>, яка має вищу освіту дитячого психолога. За плечима:</p>
+                    <ul class="experience-list">
+                        <li class="experience-item">Досвід роботи в якості викладача в державного садка на Україні;</li>
+                        <li class="experience-item">Досвід роботи в якості вихователя в дитячому саду в Польщі у Варшаві;</li>
+                        <li class="experience-item">Досвід організації дитячого садка в Німеччині;</li>
+                    </ul>
                 <p class="about-knowledge">
                     Отримані знання дали можливість створення унікального підходу до виховання дітей.
                 </p>
+                </div>
             </div>
             <div class="about-achievements">
+                <h2 class="about-us-header">Про нас</h2>
                 <p class="about-children">
-                    Група інтенсивного розвитку "Соняшник" була створена 10 років тому. 
+                    Група інтенсивного розвитку "<span>Соняшник</span>" була створена 10 років тому. 
                     За цей час ми випустили понад 100 дітей, які успішно навчаються в школах України, Польщі, Німеччини, Швейцарії та США.
                 </p>
-                <img class="about-us-photo" width="477" height="495">
+                <img class="about-us-photo">
             </div>
         </section>
         <section id='choice'>
@@ -84,63 +86,65 @@
             </ul>
         </section>
         <section id='groups'>
-            <h2 class="groups-header">Групи нашого “соняшнику” поділяються на</h2>
-            <div class="group-baby">
-                <div class="group-wrapper">
-                    <h3 class="group-name">"Малятко"</h3>
-                    <p class="group-age">20м-вь - 3 років</p>
-                </div>
-                <img class="group-baby-photo" width="120" height="100">
-                <div class="group-description">
-                    Диті мають окреме приміщення, особливий догляд, та спеціальні розвивати заняття
-                </div>
-            </div>
-            <div class="group-child">
-                <div class="group-wrapper">
-                    <h3 class="group-name">"Дослідники"</h3>
-                    <p class="group-age">3 - 5 років</p>
-                </div>
-                <img class="group-child-photo" width="120" height="114">
-                <div class="group-description">
-                    Мета занять в цій групі вицвіті особливої здібности дітей та розробити індивідуальні методи навчання. 
-                    Заохочувати самостійність та ініціативу дітей. Розвивати зв'язне мовлення.
-                </div>
-            </div>
-            <div class="group-preschooler">
-                <div class="group-wrapper">
-                    <h3 class="group-name">"Майбутні школярики"</h3>
-                    <p class="group-age">5 - 6 років</p>
-                </div>
-                <img class="group-preschooler-photo" width="120" height="130">
-                <div class="group-description">
-                    Підготовка до школи.Читання реченнями. Письмо в зошитах. 
-                    Практичні завдання, що розвивають логічне мислення і викликають інтерес до навчання. 
-                    Формування активної особистости та лідерських якостей. Розвиток творчих здібностей.
+            <h2 class="groups-header">Групи нашого “<span>соняшнику</span>” поділяються на</h2>
+            <div class="group-main-container">
+               <div class="group-train"></div>
+                <div class="group-container">
+                    <div class="group-baby">
+                        <div class="group-wrapper">
+                            <h3 class="group-name">"Малятко"</h3>
+                            <p class="group-age">20м-вь - 3 років</p>
+                        </div>
+                        <div class="group-description">
+                            Диті мають окреме приміщення, особливий догляд, та спеціальні розвивати заняття
+                        </div>
+                    </div>
+                    <div class="group-child">
+                        <div class="group-wrapper">
+                            <h3 class="group-name">"Дослідники"</h3>
+                            <p class="group-age">3 - 5 років</p>
+                        </div>
+                        <div class="group-description">
+                            Мета занять в цій групі вицвіті особливої здібности дітей та розробити індивідуальні методи навчання. 
+                            Заохочувати самостійність та ініціативу дітей. Розвивати зв'язне мовлення.
+                        </div>
+                    </div>
+                    <div class="group-preschooler">
+                        <div class="group-wrapper">
+                            <h3 class="group-name">"Майбутні школярики"</h3>
+                            <p class="group-age">5 - 6 років</p>
+                        </div>
+                        <div class="group-description">
+                            Підготовка до школи.Читання реченнями. Письмо в зошитах. 
+                            Практичні завдання, що розвивають логічне мислення і викликають інтерес до навчання. 
+                            Формування активної особистости та лідерських якостей. Розвиток творчих здібностей.
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section id="activities">
             <h2 class="activities-header">Заняття в “<span>соняшнику</span>”</h2>
             <ul class="activities-list">
-                <li class="activities-item">
+                <li class="activities-item activities-item-sport">
                     <a href = "#">Спортивнi</a>
                 </li>
-                <li class="activities-item">
+                <li class="activities-item activities-item-motor">
                     <a href = "#">Розвиваючi Моторику</a>
                 </li>
-                <li class="activities-item">
+                <li class="activities-item activities-item-languages">
                     <a href = "#">Іноземні Мови</a>
                 </li>
-                <li class="activities-item">
+                <li class="activities-item activities-item-preschool">
                     <a href = "#">Підготовка До Школи</a>
                 </li>
-                <li class="activities-item">
+                <li class="activities-item activities-item-creative">
                     <a href = "#">Креативні</a>
                 </li>
-                <li class="activities-item">
+                <li class="activities-item activities-item-music">
                     <a href = "#">Музичне Виховання</a>
                 </li>
-                <li class="activities-item">
+                <li class="activities-item activities-item-cooking">
                     <a href = "#">Кулинария</a>
                 </li>
             </ul>

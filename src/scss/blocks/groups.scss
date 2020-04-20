@@ -1,0 +1,114 @@
+#groups {
+    width: 100%;
+}
+
+.groups-header {
+    margin: 0;
+    padding: 177px 0 10px;
+    font-family: Amatic, Arial, sans-serif;
+    font-size: 64px;
+    line-height: 140%;
+    color: #3E3C3C;
+    text-align: center;
+    background: url('../assets/images/group-background.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.groups-header span {
+    color: #FF6F3C;
+}
+
+.group-main-container {
+    width: 100%;
+    margin-top: -100px;
+    background: linear-gradient(to bottom, #FCE2CF 0%, #FFEAE0 100%);     
+    padding-bottom: 100px;
+    margin: 0;
+}
+
+.group-train {
+    background: url('../assets/images/train.png') top no-repeat;
+    background-size: auto;
+    z-index: 5;
+    width: auto;
+    height: 347px;
+    position: relative;
+}
+
+.group-container {
+    display: flex;
+    margin: 0 auto;
+    margin-top: -35px;
+    justify-content: space-between;
+    max-width: 1109px;
+    padding: 0;
+    z-index: 3;
+    position: relative;
+}
+
+.group-baby {
+    background: #2AB270;
+    padding: 40px 12px 102px 13px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 50px;
+    position: relative;
+    width: 335px;
+    box-sizing: border-box;
+}
+
+.group-child {
+    background: #D24146;
+    padding: 40px 12px 77px 13px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 50px;
+    position: relative;
+    width: 335px;
+    box-sizing: border-box;
+}
+
+.group-preschooler {
+    background: #339BCA;
+    padding: 40px 12px 52px 13px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 50px;
+    position: relative;
+    width: 335px;
+    box-sizing: border-box;
+
+}
+
+.group-name {
+    font-family: Oswald-Regular, Arial, sans-serif;
+    font-size: 36px;
+    line-height: 140%;
+    text-align: center;
+    color: #000000;
+    padding: 0;
+    margin: 0;
+}
+
+.group-age {
+    font-family: Oswald-Light, Arial, sans-serif;
+    font-size: 36px;
+    line-height: 140%;
+    text-align: center;
+    color: #000000;
+    padding: 0;
+    margin: 0;
+}
+
+.group-wrapper {
+    border-bottom: 1px solid #000000;
+    margin-bottom: 17px;
+}
+
+.group-description {
+    text-align: center;
+    font-family: Oswald-Light, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #000000;
+}

@@ -1,0 +1,94 @@
+#about-us {
+    background: url('../assets/images/about-bottom.png') bottom repeat-x,
+                linear-gradient(to bottom, #F7F2F2 0%, #F7F2F2 95%, #F4F4F4 100%) center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 6% 2.7%;
+    margin-bottom: 44px;
+}
+
+.about-experience {
+    width: 47.5%;
+    font-family: Oswald-Light, Arial, sans-serif;
+    font-size: 1.3vw;
+    font-weight: 300;
+    line-height: 140%;
+    background: url('../assets/images/achievment-list.png') top no-repeat;
+    background-size: 100% auto;
+}
+
+.about-container {
+    width: 51%;
+    padding: 33% 17% 13% 31%;
+}
+
+.about-experience-group {
+    margin: 8% 0;
+}
+
+.about-experience-group span {
+    color: #FF6F3C;
+}
+
+.experience-list {
+    list-style: none;
+    
+    padding: 0;
+}
+
+.experience-item {
+    padding: 0 0 5% 7.5%;
+    position: relative;
+}
+
+.experience-item:last-child {
+    padding-bottom: 2%;
+    width: 270px;
+}
+
+.experience-item::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 10px;
+    left: 0;
+    background: #FF6F3C;
+    border-radius: 50%;
+}
+
+.experience-item {
+    margin: 0;
+}
+
+.about-achievements {
+    width: 38.3%;
+    padding-bottom: 167px;
+}
+
+.about-us-header {
+    @include header-h1;
+    width: 90%;
+    margin: 0;
+    margin-bottom: 7%;
+    padding: 0;
+}
+
+.about-children {
+    font-family: Oswald-Light, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 140%;
+    width: 499px;
+    padding-bottom: 8.3%;
+}
+
+.about-children span {
+    color: #FF6F3C;
+}
+
+.about-us-photo {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.15), -10px -10px 15px #FFFFFF;
+    width: 100%;
+    height: auto;
+}

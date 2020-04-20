@@ -1,26 +1,26 @@
 .main-section {
-    background: linear-gradient(to bottom, #FCE2CF 0%, #FCE2CF 90%, #fff 90%, #fff 100%);
+    background: linear-gradient(to bottom, #FCE2CF 0%, #FCE2CF 70%, #F7F2F2 70%, #F7F2F2 100%);
 }
 
 .main-wrapper {
     display: flex;
-    justify-content: center;
-    padding: 0 85px;
+    justify-content: space-between;
+    padding: 0 9.5% 0 11%;
+    
 }
 
 .main-container {
     width: 50%;
-    margin-top: -150px;
-    margin-right: -20%;
     z-index: 3;
+    margin-top: -200px;
 }
 
 .main-header {
-    font-family: Amatic, Arial, sans-serif;
-    font-size: 4vw;
-    line-height: 140%;
-    color: #3E3C3C;
+    @include header-h1;
+    font-size: 3.5vw;
     width: 90%;
+    padding-bottom: 10px;
+    margin: 0;
 }
 
 .main-header span {
@@ -30,10 +30,10 @@
 .main-description {
     font-family: Oswald-Light, Arial, sans-serif;
     font-size: 24px;
-    line-height: 140%;
     color: #3E3C3C;
     padding-bottom: 5%;
     width: 80%;
+    margin: 0;
 }
 
 .main-button {
@@ -50,8 +50,8 @@
 }
 
 .earth-image {
-    margin-top: -170px;
-    width: 62.5%;
+    margin-top: -300px;
+    width: 55%;
     height: auto;
     z-index: 3;
 }
@@ -59,8 +59,8 @@
 .main-grass {
     width: 100%;
     height: auto;
-    background-image: linear-gradient(to bottom, #FCE2CF 0%, #FCE2CF 50%, #fff 50%, #fff 100%);
-    margin-top: -20%;
+    background-image: linear-gradient(to bottom, #FCE2CF 0%, #F7F2F2 100%);
+    margin-top: -13%;
     padding: 0;
     z-index: -2;
 }

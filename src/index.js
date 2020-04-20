@@ -2,9 +2,6 @@ import './scss/main.scss';
 import earth from './assets/images/earth.png';
 import grass from './assets/images/grass.png';
 import aboutusImage from './assets/images/aboutus-photo.jpg';
-import babyImage from './assets/images/baby.png';
-import childImage from './assets/images/child.png';
-import preschoolerImage from './assets/images/preschooler.png';
 import arrow from './assets/images/arrow.png';
 import star from './assets/images/star.png';
 import bell from './assets/images/bell.png';
@@ -17,15 +14,6 @@ mainGrass.src = grass;
 
 const aboutImage = document.querySelector('.about-us-photo');
 aboutImage.src = aboutusImage;
-
-const babyPhoto = document.querySelector('.group-baby-photo');
-babyPhoto.src = babyImage;
-
-const childPhoto = document.querySelector('.group-child-photo');
-childPhoto.src = childImage;
-
-const preschoolerPhoto = document.querySelector('.group-preschooler-photo');
-preschoolerPhoto.src = preschoolerImage;
 
 const arrowLeft = document.querySelector('.slider-left-button');
 arrowLeft.src = arrow;

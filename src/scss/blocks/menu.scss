@@ -57,6 +57,7 @@
 .menu-item--exersices:hover  .menu-exersices {
     display: block;
     text-align: right;
+    z-index: 10;
 }
 
 .menu-item--exersices:hover  .menu-exersice a{
