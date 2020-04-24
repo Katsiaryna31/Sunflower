@@ -1,0 +1,53 @@
+.footer {
+    background: #2AB270;
+    padding-bottom: 15px;
+}
+
+.footer-navigation {
+    width: 62%;
+    margin: 0 auto;
+    padding: 68px 0 11px;
+    border-bottom: 1px solid #3E3C3C;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-item a {
+    @include header-h2;
+    color: #3E3C3C;
+    text-decoration: none;
+}
+
+.footer-item:hover a {
+    color: #FF6F3C;
+}
+
+.footer-item--logo {
+    position: relative;
+}
+
+.footer-item--logo::before {
+    content: '';
+    width: 180px;
+    height: 70px;
+    position: absolute;
+    background: url('../assets/images/part-sunflower.png');
+    background-size: 180px 70px;
+    top: -60px;
+    left: -40px;
+}
+
+.footer-copyrights {
+    text-align: center;
+    font-family: Oswald-ExtraLight, Arial, sans-serif;
+    font-size: 14px;
+    padding: 16px 0 0 0;
+    margin: 0;
+}

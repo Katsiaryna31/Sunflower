@@ -4,7 +4,6 @@ import grass from './assets/images/grass.png';
 import aboutusImage from './assets/images/aboutus-photo.jpg';
 import arrow from './assets/images/arrow.png';
 import star from './assets/images/star.png';
-import bell from './assets/images/bell.png';
 
 const earthImage = document.querySelector('.earth-image');
 earthImage.src = earth;
@@ -25,6 +24,3 @@ const starImages = document.querySelectorAll('.star');
 starImages.forEach((starImage) => {
     starImage.src = star;
 });
-
-const bellImage = document.querySelector('.bell');
-bellImage.src = bell;

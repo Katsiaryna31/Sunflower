@@ -1,0 +1,64 @@
+#callback {
+    background: url('../assets/images/callback-background.png') top no-repeat,
+                #F7F2F2;
+    padding-bottom: 67px;
+}
+
+.callback-header {
+    padding: 110px 0 0;
+    margin: 0;
+    @include header-h1;
+    text-align: center;
+}
+
+.callback-questions {
+    @include text1;
+    text-align: center;
+}
+
+.callback-container {
+    display: flex;
+    justify-content: space-between;
+    width: 62%;
+    margin: 0 auto;
+}
+
+.callback-form {
+    background: url('../assets/images/puzzle1.png') no-repeat;
+    background-size: contain;
+    width: 63%;
+    height: auto;
+}
+
+.callback-map {
+    background: url('../assets/images/puzzle2.png') no-repeat;
+    background-size: contain;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 30% 272px 45px 75px;
+}
+
+.input-form {
+    @include text2;
+    padding: 7px 0 7px 7px;
+    margin-bottom: 13px;
+    border-radius: 5px;
+    border: none;
+}
+
+.submit-button {
+    @include button;
+    text-transform: uppercase;
+    padding: 12px 93px 14px 102px;
+    margin: 0 auto;
+    margin-top: 13px;
+    box-shadow: 5px 5px 10px rgba(62, 60, 60, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.1);
+    background: #FF6F3C;
+    border-radius: 10px;
+    border: none;
+    width: 287px;
+    box-sizing: border-box;
+}
