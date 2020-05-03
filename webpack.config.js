@@ -4,11 +4,14 @@ const HtmlWebPackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     entry: {
-        app: './src/index.js'
+        app: './src/index.js',
+        main: './src/js/main',
+        slider: './src/js/slider'
     },
     output: {
         filename: '[name].js',
         path: path.resolve(__dirname, './dist'),
+        library: '[name]'
     },
     module: {
         rules: [{
@@ -26,6 +29,7 @@ module.exports = {
             }
         }, {
             test: /\.html$/,
+            include: path.resolve(__dirname, 'src/html/includes'),
             use: [
                 {
                     loader: 'file-loader',
@@ -90,9 +94,16 @@ module.exports = {
         }),
 
         new HtmlWebPackPlugin({
+            filename: 'index.html',
             template: './src/index.html',
             filename: './index.html'
         }),
+
+        new HtmlWebPackPlugin({  
+            filename: 'sport.html',
+            template: './src/sport.html'
+          })
+       
     ],
 
 }

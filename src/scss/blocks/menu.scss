@@ -19,7 +19,8 @@
     text-decoration: none;
 }
 
-.menu-item:hover a {
+.menu-item:hover a,
+.menu-item--active a {
     color: #FF6F3C;
 }
 
