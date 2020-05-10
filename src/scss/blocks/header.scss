@@ -1,12 +1,20 @@
 .header {
     width: 100%;
     @include zero-space ();
-    background: url('../assets/images/sky.png') #FCE2CF;
+    background: #FCE2CF;
+    height: 472px; 
+    position: relative; 
+    z-index: 0;
+}
+
+.header-container {
+    background: url('../assets/images/sky.png');
     background-repeat: no-repeat;
     background-size: 100%;
-    padding-top: 30px;
     height: 472px;
-    z-index: 15;
+    padding-top: 30px;
+    position: relative;
+    z-index: 2;
 }
 
 .header-phone {

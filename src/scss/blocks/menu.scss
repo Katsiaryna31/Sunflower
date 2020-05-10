@@ -1,7 +1,9 @@
 .menu {
     width: 51%;
-    margin: 0 auto;
-    padding-top: 60px;
+    position: absolute;
+    top: 120px;
+    left: 25%;
+    z-index: 5;
 }
 
 .menu-list {
@@ -58,7 +60,6 @@
 .menu-item--exersices:hover  .menu-exersices {
     display: block;
     text-align: right;
-    z-index: 10;
 }
 
 .menu-item--exersices:hover  .menu-exersice a{
@@ -78,6 +79,7 @@
 .menu-exersices {
     display: none;
     position: absolute;
+    z-index: 101;
     width: 179px;
     height: 238px;
     top: 50px;
