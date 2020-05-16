@@ -1,7 +1,7 @@
 .menu {
     width: 51%;
     position: absolute;
-    top: 120px;
+    top: 40px;
     left: 25%;
     z-index: 5;
 }
@@ -87,4 +87,95 @@
     background: #E5E5E5;
     list-style: none;
     padding: 8px;
+}
+
+@media screen and (max-width: 1125px) and (min-width: 630px) {
+    .menu {
+        width: 90%;
+        left: 5%;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .menu {
+        width: 100%;
+        left: 0;
+    }
+
+    .menu-item a {
+        font-size: 24px;
+    }
+
+    .menu-item--logo::before {
+        width: 92px;
+        height: 40px;
+        background-size: 92px 40px;
+        background-repeat: no-repeat;
+        top: -35px;
+        left: -13px;
+    }
+    
+    .menu-item--logo::after {
+        width: 92px;
+        height: 40px;
+        background-size: 92px 40px;
+        background-repeat: no-repeat;
+        top: 30px;
+        left: -10px;
+    }
+
+    .menu-exersice a{
+        font-family: Oswald-Light, Arial, sans-serif;
+        font-size: 10px; 
+    }
+
+    .menu-exersices {
+        width: 80px;
+        height: 130px;
+        top: 30px;
+        left: -30px;
+        padding: 4px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .menu {
+        display: none;
+    } 
+
+    .menu--open {
+        display: block;
+        position: relative;
+        top: 0;
+        min-height: 200px;
+    }
+    
+    .menu-list {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .menu-item:nth-child(3) {
+        display: none;
+    }
+    
+    .menu-item a {
+        font-size: 36px;
+    }
+
+    .menu-exersices {
+        display: none;
+        position: absolute;
+        z-index: 101;
+        width: 179px;
+        height: 238px;
+        top: -130px;
+        left: 100px;
+        background: transparent;
+        padding: 3px;
+    }
+
+    .menu-exersice a{
+        font-size: 24px; 
+    }
 }

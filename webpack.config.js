@@ -6,8 +6,9 @@ module.exports = {
     entry: {
         app: './src/index.js',
         main: './src/js/main',
+        burger: './src/js/burger-button',
         slider: './src/js/slider',
-        sport: './src/js/sport'
+        sport: './src/js/sport',
     },
     output: {
         filename: '[name].js',
@@ -98,13 +99,13 @@ module.exports = {
             filename: 'index.html',
             template: './src/index.html',
             filename: './index.html',
-            chunks: ['app' , 'main']
+            chunks: ['app' , 'main', 'burger']
         }),
 
         new HtmlWebPackPlugin({  
             filename: 'sport.html',
             template: './src/sport.html',
-            chunks: ['app' , 'slider', 'sport']
+            chunks: ['app' , 'burger', 'slider', 'sport']
           })
        
     ],
