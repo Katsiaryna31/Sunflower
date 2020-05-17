@@ -9,6 +9,12 @@ module.exports = {
         burger: './src/js/burger-button',
         slider: './src/js/slider',
         sport: './src/js/sport',
+        motorics: './src/js/motorics',
+        languages: './src/js/languages',
+        preschool: './src/js/preschool',
+        creative: './src/js/creative',
+        music: './src/js/music',
+        cooking: './src/js/cooking',
     },
     output: {
         filename: '[name].js',
@@ -106,7 +112,43 @@ module.exports = {
             filename: 'sport.html',
             template: './src/sport.html',
             chunks: ['app' , 'burger', 'slider', 'sport']
-          })
+        }),
+
+        new HtmlWebPackPlugin({  
+            filename: 'motorics.html',
+            template: './src/motorics.html',
+            chunks: ['app' , 'burger', 'slider', 'motorics']
+        }),
+
+        new HtmlWebPackPlugin({  
+            filename: 'languages.html',
+            template: './src/languages.html',
+            chunks: ['app' , 'burger', 'slider', 'languages']
+        }),
+
+        new HtmlWebPackPlugin({  
+            filename: 'preschool.html',
+            template: './src/preschool.html',
+            chunks: ['app' , 'burger', 'slider', 'preschool']
+        }),
+
+        new HtmlWebPackPlugin({  
+            filename: 'creative.html',
+            template: './src/creative.html',
+            chunks: ['app' , 'burger', 'slider', 'creative']
+        }),
+
+        new HtmlWebPackPlugin({  
+            filename: 'music.html',
+            template: './src/music.html',
+            chunks: ['app' , 'burger', 'slider', 'music']
+        }),
+
+        new HtmlWebPackPlugin({  
+            filename: 'cooking.html',
+            template: './src/cooking.html',
+            chunks: ['app' , 'burger', 'slider', 'cooking']
+        }),
        
     ],
 
