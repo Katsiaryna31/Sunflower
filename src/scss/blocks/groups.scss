@@ -28,8 +28,8 @@
 }
 
 .group-train {
-    background: url('../assets/images/train.png') top no-repeat;
-    background-size: auto;
+    background: url('../assets/images/train.png') top center no-repeat;
+    background-size: 1950px auto;
     z-index: 5;
     width: auto;
     height: 347px;
@@ -43,6 +43,7 @@
     justify-content: space-between;
     max-width: 1109px;
     padding: 0;
+    padding-left: 90px;
     z-index: 3;
     position: relative;
 }

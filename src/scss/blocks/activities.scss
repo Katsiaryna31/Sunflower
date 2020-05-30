@@ -62,6 +62,8 @@
 
 .activities-item:nth-child(4) {
     width: 1190px;
+    height: 0.3vw;
+    
 }
 
 .activities-background {
@@ -88,6 +90,8 @@
 
 .activities-background-preschool {
     background: url('../assets/images/preschool.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .activities-background-creative {
@@ -139,7 +143,7 @@
     border-radius: 5px;
     position: absolute;
     bottom: 100px;
-    left: 12%;
+    left: 17%;
     width: 100%;
     box-sizing: border-box;
 }
