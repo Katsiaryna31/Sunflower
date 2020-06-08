@@ -1,8 +1,8 @@
 .menu {
-    width: 70%;
+    width: 65%;
     position: absolute;
-    top: 70px;
-    left: 15%;
+    top: 60px;
+    left: 17%;
     z-index: 5;
 }
 
@@ -33,24 +33,24 @@
 .menu-item--logo::before {
     content: '';
     width: 180px;
-    height: 70px;
+    height: 75px;
     position: absolute;
     background: url('../assets/images/part-sunflower.png');
-    background-size: 180px 70px;
-    top: -60px;
+    background-size: 180px 75px;
+    top: -67px;
     left: -40px;
 }
 
 .menu-item--logo::after {
     content: '';
     width: 180px;
-    height: 70px;
+    height: 75px;
     position: absolute;
     background: url('../assets/images/part-sunflower.png');
     transform: rotate(180deg);
-    background-size: 180px 70px;
+    background-size: 180px 75px;
     top: 45px;
-    left: -35px;
+    left: -40px;
 }
 
 .menu-item--exersices {
