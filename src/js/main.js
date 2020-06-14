@@ -1,6 +1,8 @@
 import logo from '../assets/images/logo-mobile.png';
 import earth from '../assets/images/earth.png';
+import earthMini from '../assets/images/earth-mini.png';
 import grass from '../assets/images/grass.png';
+import grassMini from '../assets/images/grass-mini.png'; 
 import aboutusImage from '../assets/images/aboutus-photo.jpg';
 import arrow from '../assets/images/arrow.png';
 import star from '../assets/images/star.png';
@@ -13,8 +15,14 @@ sunflower.src = logo;
 const earthImage = document.querySelector('.earth-image');
 earthImage.src = earth;
 
+const miniEarth = document.querySelector('.mini-earth');
+miniEarth.srcset = earthMini;
+
 const mainGrass = document.querySelector('.main-grass');
 mainGrass.src = grass;
+
+const miniGrass = document.querySelector('.mini-grass');
+miniGrass.srcset = grassMini;
 
 const aboutImage = document.querySelector('.about-us-photo');
 aboutImage.src = aboutusImage;

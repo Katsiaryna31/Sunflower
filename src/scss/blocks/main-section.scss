@@ -13,7 +13,7 @@
 
 .main-container {
     width: 50%;
-    margin-top: -200px;
+    margin-top: 0;
     
 }
 
@@ -51,12 +51,16 @@
     border-radius: 5px;
 }
 
-.earth-image {
-    margin-top: -280px;
+.earth {
+    margin-top: 0;
     width: 55%;
     height: auto;
     position: relative;
     z-index: 1;
+}
+
+.earth-image {
+    width: 100%;
 }
 
 .main-grass {
@@ -65,4 +69,50 @@
     background-image: linear-gradient(to bottom, #FCE2CF 0%, #F7F2F2 100%);
     margin-top: -13%;
     padding: 0;
+}
+
+@media screen and (max-width: 830px) and (min-width: 414px) {
+    .main-description {
+        font-size: 16px;
+    }
+
+    .main-button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 413px) {
+    .main-wrapper {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0;
+    }
+
+    .main-container {
+        width: 100%;
+    }
+
+    .earth {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-header {
+        font-size: 36px;
+        width: auto;
+        padding: 0 20px;
+    }
+
+    .main-description {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+
+    .main-button {
+        display: none;
+    }
+
+    .main-grass {
+        margin-top: -170px;
+    }
 }
