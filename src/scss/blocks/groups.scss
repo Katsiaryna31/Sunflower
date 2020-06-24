@@ -76,7 +76,6 @@
     position: relative;
     width: 335px;
     box-sizing: border-box;
-
 }
 
 .group-name {
@@ -112,4 +111,96 @@
     text-align: center;
     letter-spacing: 0.02em;
     color: #000000;
+}
+
+@media screen and (max-width: 1250px) {
+    #groups {
+        background: #FCE2CF;
+    }
+
+    .groups-header {
+        margin: 0;
+        padding: 0 10px;
+        background: transparent;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .group-train {
+        background: url('../assets/images/train-mini.png') top center no-repeat;
+        background-size: contain;
+    }
+
+    .group-container {
+        margin-top: -80px;
+        padding: 0 10px;
+    }
+
+    .group-baby {
+        width: 30%;
+    }
+    
+    .group-child {
+        width: 30%;
+    }
+    
+    .group-preschooler {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .group-container {
+        margin-top: -150px;
+    }
+
+    .group-main-container {
+        padding-bottom: 10px;
+    }
+
+    .group-baby {
+        padding: 14px 7px 18px 7px;
+        width: 30%;
+        border-radius: 10px;
+    }
+    
+    .group-child {
+        padding: 14px 7px 18px 7px;
+        width: 30%;
+        border-radius: 10px;
+    }
+    
+    .group-preschooler {
+        padding: 14px 7px 18px 7px;
+        width: 30%;
+        border-radius: 10px;
+    }
+
+    .group-name {
+        font-size: 10px;
+    }
+    
+    .group-age {
+        font-size: 10px;
+    }
+    
+    .group-description {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .groups-header {
+        font-size: 32px;
+    }
+
+    .group-container {
+        margin-top: -200px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .group-container {
+        margin-top: -245px;
+    }
 }

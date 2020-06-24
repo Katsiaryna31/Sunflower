@@ -134,7 +134,10 @@
 
 @media screen and (max-width: 413px) {
     #about-us {
-        padding: 0 0 10%;
+        padding: 0 0 13%;
+        margin-bottom: 0;
+        background: url('../assets/images/about-bottom-mini.png') bottom repeat-x,
+                linear-gradient(to bottom, #F7F2F2 0%, #F7F2F2 90%, #FCE2CF 91%, #FCE2CF 100%) center;
     }
 
     .about-us-header {
@@ -145,6 +148,7 @@
 
     .about-wrapper {
         flex-direction: column;
+        padding-bottom: 40px;
     }
 
     .about-experience {
@@ -207,6 +211,7 @@
         font-family: Oswald-Light, Arial, sans-serif;
         font-size: 14px;
         line-height: 140%;
+        text-align: center;
         width: 77%;
         margin: 0 auto;
     }
