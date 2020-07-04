@@ -21,7 +21,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 62.5%;
+    width: 1190px;
     margin: 0 auto;
     padding: 0;
 }
@@ -62,8 +62,7 @@
 
 .activities-item:nth-child(4) {
     width: 1190px;
-    height: 0.3vw;
-    
+    height: 0.3vw;  
 }
 
 .activities-background {
@@ -76,16 +75,21 @@
 }
 
 .activities-background-sport {
-
     background: url('../assets/images/sport.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .activities-background-motor {
     background: url('../assets/images/motor.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .activities-background-languages {
     background: url('../assets/images/languages.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .activities-background-preschool {
@@ -96,14 +100,20 @@
 
 .activities-background-creative {
     background: url('../assets/images/creative.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .activities-background-music {
     background: url('../assets/images/music.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .activities-background-cooking {
     background: url('../assets/images/cooking.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .activities-item:hover {
@@ -164,4 +174,57 @@
 .activities-preschool-active .active-more {
     width: 260px;
     left: 50%;
+}
+
+@media screen and (max-width: 1270px) {
+    .activities-list {
+        width: 90%;
+    }
+
+    .active-list {
+        display: none;
+        padding: 20px 0 0 20px;
+    }
+
+    .activities-content h3 {
+        font-size: 25px;
+    }
+
+    .active-more {
+        font-size: 10px;
+        padding: 13px 0;
+    }
+
+    .activities-preschool-active .active-more {
+        left: 40%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .activities-header {
+        padding: 10px 0;
+        font-size: 36px;
+    }
+
+    .active-list {
+        display: none;
+        padding: 20px 0 0 50px;
+    }
+
+    .activities-item {
+        margin-bottom: 13px;
+    }
+
+    .activities-content h3 {
+        font-size: 14px;
+    }
+
+    .active-more {
+        padding: 5px 0;
+        bottom: 50px;
+    }
+
+    .activities-preschool-active .active-more {
+        left: 20%;
+    }
 }

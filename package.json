@@ -57,7 +57,7 @@
     "dragula": "^3.7.2",
     "google-maps": "^4.2.3",
     "node-fetch": "^2.6.0",
-    "swiper": "^5.4.0",
+    "swipejs": "^2.2.18",
     "upng-js": "^2.1.0"
   }
 }

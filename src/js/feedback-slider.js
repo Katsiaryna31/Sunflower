@@ -1,8 +1,8 @@
 import Swipe from 'swipejs';
 
-window.mySwipe = new Swipe(document.querySelector('.slider'), {
+window.mySwipe = new Swipe(document.getElementById('slider'), {
     startSlide: 0,
-    speed: 1000,
+    speed: 400,
     auto: 3000,
     draggable: false,
     continuous: true,
@@ -13,14 +13,12 @@ window.mySwipe = new Swipe(document.querySelector('.slider'), {
     transitionEnd: function(index, elem) {}
   });
 
-const sliderLeft = document.querySelector('.slider__control_left');
+const sliderLeft = document.querySelector('.slider-left');
 sliderLeft.addEventListener('click', ()=> {
     mySwipe.prev();
 })
 
-const sliderRight = document.querySelector('.slider__control_right');
+const sliderRight = document.querySelector('.slider-right');
 sliderRight.addEventListener('click', ()=> {
     mySwipe.next();
 })
-
-

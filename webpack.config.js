@@ -7,6 +7,7 @@ module.exports = {
         app: './src/index.js',
         main: './src/js/main',
         burger: './src/js/burger-button',
+        feedbackSlider: './src/js/feedback-slider',
         slider: './src/js/slider',
         sport: './src/js/sport',
         motorics: './src/js/motorics',
@@ -105,7 +106,7 @@ module.exports = {
             filename: 'index.html',
             template: './src/index.html',
             filename: './index.html',
-            chunks: ['app' , 'main', 'burger']
+            chunks: ['app' , 'main', 'feedbackSlider', 'burger']
         }),
 
         new HtmlWebPackPlugin({  

@@ -31,6 +31,22 @@
     margin-top: -350px;
 }
 
+.swipe {
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+  }
+  .swipe-wrap {
+    overflow: hidden;
+    position: relative;
+  }
+  .swipe-wrap > div {
+    float: left;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
 .slider__item {
     flex: 0 0 100%;
     max-width: 100%;

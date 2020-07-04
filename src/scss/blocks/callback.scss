@@ -1,7 +1,9 @@
 #callback {
     background: url('../assets/images/callback-background.png') top no-repeat,
                 #F7F2F2;
+    background-size: contain;
     padding-bottom: 67px;
+    position: relative;
 }
 
 .callback-header {
@@ -9,11 +11,15 @@
     margin: 0;
     @include header-h1;
     text-align: center;
+    z-index: 3;
+    position: relative;
 }
 
 .callback-questions {
     @include text1;
     text-align: center;
+    z-index: 3;
+    position: relative;
 }
 
 .callback-container {
@@ -146,4 +152,166 @@
     position: absolute;
     top: 10px;
     right: 5px;
+}
+
+@media screen and (max-width: 1700px) {
+    #map {
+        left: 5%;
+        top: 20px;
+        width: 1400px;
+        height: 600px;
+    }
+
+    #map iframe {
+        width: 1400px;
+        height: 600px;
+    }
+
+    .map-button {
+        right: 45px;
+    }
+}
+
+@media screen and (max-width: 1420px) {
+    #map {
+        left: 5%;
+        top: 20px;
+        width: 1000px;
+        height: 500px;
+    }
+
+    #map iframe {
+        width: 1000px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 1015px) {
+    #callback {
+        background: url('../assets/images/callback-mini.png') top no-repeat,
+                    #F7F2F2;
+        background-size: contain;
+        padding-bottom: 20px;
+    }
+
+    .callback-header {
+        padding: 20px 0 0;
+    }
+
+    .callback-container {
+        width: 100%;
+    }
+
+    .callback-form {
+        background: url('../assets/images/puzzle1-mini.png') no-repeat;
+        background-size: contain;
+        width: 335px;
+    }
+
+    .form {
+        padding: 140px 40px 30px;
+    }
+
+    .input-form {
+        font-size: 14px;
+        padding: 7px 0 2px 4px;
+        margin-bottom: 10px;
+        border-radius: 0;
+        border: none;
+    }
+
+    .submit-button {
+        font-size: 16px;
+        padding: 12px 72px 14px 80px;
+        width: 244px;
+    }
+
+    .callback-image {
+        width: 350px;
+        margin-left: 0
+    }
+
+    .callback-details {
+        top: 120px;
+        left: 20px;
+        width: 230px;
+    }
+    
+    .callback-details p {
+        font-size: 14px;
+        padding-left: 50px;
+        margin: 3px 0;
+        position: relative;
+    }
+    
+    .callback-address::before {
+        top: 5px;
+        background-size: contain;
+        width: 21px;
+        height: 21px;
+    }
+    
+    .callback-phone::before {
+        top: -3px;
+        background-size: contain;
+        width: 21px;
+        height: 21px;
+    }
+    
+    .callback-mail::before {
+        top: -3px;
+        background-size: contain;
+        width: 21px;
+        height: 21px;
+    }
+
+    #map {
+        width: 325px;
+        height: 325px;
+        right: 5%;
+        top: 50px;
+    }
+
+    #map iframe {
+        width: 325px;
+        height: 325px;
+    }
+
+    .map-button {
+        right: 0;
+    }
+
+    .map-close {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .callback-container {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .callback-header {
+        font-size: 36px;
+    }
+    
+    .callback-questions {
+        font-size: 14px;
+    }
+
+    .callback-container {
+        margin-top: -100px;
+    }
+
+    .callback-image {
+        margin-top: -130px;
+        width: 335px;
+    }
+
+    .callback-details {
+        top: -5px;
+    }
 }
