@@ -55,3 +55,17 @@ mapButton.addEventListener('click', () => {
     mapBig.classList.remove('map--active');
 })
 
+const activitiesItemList = document.querySelectorAll('.activities-item');
+const activitiesActiveList = document.querySelectorAll('.activities-item--active');
+activitiesItemList.forEach((activitiesItem) => {
+    activitiesItem.addEventListener('touch', () => {
+        activitiesActiveList.forEach((activeElement) => {
+            activeElement.style.display = 'none';
+        });
+        const activitiesItemActive = activitiesItem.querySelector('.activities-item--active');
+        activitiesItemActive.style.display = 'block';
+    });
+})
+
+
+
