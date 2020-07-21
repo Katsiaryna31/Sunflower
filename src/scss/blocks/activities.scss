@@ -125,8 +125,7 @@
     cursor: pointer;
 }
 
-.activities-item:hover .activities-background,
- {
+.activities-item:hover .activities-background {
     filter: grayscale(100) blur(2px);
     background-color: rgba(0,0,0,0.5);
     background-blend-mode: darken;
