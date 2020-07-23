@@ -165,6 +165,10 @@
     text-decoration: none;
 }
 
+.active-more-mobile {
+    display: none;
+}
+
 .activities-preschool-active {
     width: 46%;
     margin: 0 auto;
@@ -231,5 +235,16 @@
 
     .activities-preschool-active .active-more {
         left: 20%;
+    }
+
+    .activities-item:hover .activities-item--active {
+        display: none;
+    }
+
+    .active-more-mobile {
+        display: block;
+        left: 5%;
+        width: 90%;
+        bottom: 10px;
     }
 }

@@ -16,6 +16,7 @@ module.exports = {
         creative: './src/js/creative',
         music: './src/js/music',
         cooking: './src/js/cooking',
+        progressiveImage: './src/js/progressive-image',
     },
     output: {
         filename: '[name].js',
@@ -112,7 +113,7 @@ module.exports = {
         new HtmlWebPackPlugin({  
             filename: 'sport.html',
             template: './src/sport.html',
-            chunks: ['app' , 'burger', 'slider', 'sport']
+            chunks: ['app' , 'burger', 'slider', 'sport', 'progressiveImage']
         }),
 
         new HtmlWebPackPlugin({  

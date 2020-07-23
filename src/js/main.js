@@ -47,12 +47,16 @@ const mapBig = document.getElementById('map');
 const mapButton = document.querySelector('.map-close');
 mapButton.src = cross;
 
+const body = document.querySelector('body');
+
 mapContainer.addEventListener('click', () => {
     mapBig.classList.add('map--active');
+    body.style.overflow = 'hidden'; 
 })
 
 mapButton.addEventListener('click', () => {
     mapBig.classList.remove('map--active');
+    body.style.overflow = 'visible';
 })
 
 const activitiesItemList = document.querySelectorAll('.activities-item');
