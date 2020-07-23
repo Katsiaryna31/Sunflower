@@ -107,49 +107,57 @@ module.exports = {
             filename: 'index.html',
             template: './src/index.html',
             filename: './index.html',
-            chunks: ['app' , 'main', 'feedbackSlider', 'burger']
+            chunks: ['app' , 'main', 'feedbackSlider', 'burger'],
+            favicon: './src/assets/images/logo.ico',
         }),
 
         new HtmlWebPackPlugin({  
             filename: 'sport.html',
             template: './src/sport.html',
-            chunks: ['app' , 'burger', 'slider', 'sport', 'progressiveImage']
+            chunks: ['app' , 'burger', 'slider', 'sport', 'progressiveImage'],
+            favicon: './src/assets/images/logo.ico',
         }),
 
         new HtmlWebPackPlugin({  
             filename: 'motorics.html',
             template: './src/motorics.html',
-            chunks: ['app' , 'burger', 'slider', 'motorics']
+            chunks: ['app' , 'burger', 'slider', 'motorics'],
+            favicon: './src/assets/images/logo.ico',
         }),
 
         new HtmlWebPackPlugin({  
             filename: 'languages.html',
             template: './src/languages.html',
-            chunks: ['app' , 'burger', 'slider', 'languages']
+            chunks: ['app' , 'burger', 'slider', 'languages'],
+            favicon: './src/assets/images/logo.ico',
         }),
 
         new HtmlWebPackPlugin({  
             filename: 'preschool.html',
             template: './src/preschool.html',
-            chunks: ['app' , 'burger', 'slider', 'preschool']
+            chunks: ['app' , 'burger', 'slider', 'preschool'],
+            favicon: './src/assets/images/logo.ico',
         }),
 
         new HtmlWebPackPlugin({  
             filename: 'creative.html',
             template: './src/creative.html',
-            chunks: ['app' , 'burger', 'slider', 'creative']
+            chunks: ['app' , 'burger', 'slider', 'creative'],
+            favicon: './src/assets/images/logo.ico',
         }),
 
         new HtmlWebPackPlugin({  
             filename: 'music.html',
             template: './src/music.html',
-            chunks: ['app' , 'burger', 'slider', 'music']
+            chunks: ['app' , 'burger', 'slider', 'music'],
+            favicon: './src/assets/images/logo.ico',
         }),
 
         new HtmlWebPackPlugin({  
             filename: 'cooking.html',
             template: './src/cooking.html',
-            chunks: ['app' , 'burger', 'slider', 'cooking']
+            chunks: ['app' , 'burger', 'slider', 'cooking'],
+            favicon: './src/assets/images/logo.ico',
         }),
        
     ],
