@@ -110,7 +110,7 @@
     display: none;
 }
 
-@media screen and (max-width: 1000px) and (min-width: 414px) {
+@media screen and (max-width: 1000px) {
     .about-us-header {
         width: 100%;
         margin: 0;
@@ -129,6 +129,31 @@
     
     .about-achievements {
         width: 100%;
+    }
+
+    .experience-item::before {
+        content: '';
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        top: 10px;
+        left: 0;
+        background: #FF6F3C;
+        border-radius: 50%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .experience-item::before {
+        top: 4px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .experience-item::before {
+        top: 4px;
+        width: 5px;
+        height: 5px;
     }
 }
 
