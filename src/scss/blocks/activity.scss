@@ -320,10 +320,12 @@
 @media screen and (max-width: 1150px) and (min-width: 414px) {
     .activity-header {
         position: relative;
+        height: 150px;
     }
     
     .menu-activity {
         position: relative;
+        top: -80px;
     }
 
     .activity-main {

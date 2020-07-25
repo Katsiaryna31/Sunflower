@@ -121,42 +121,42 @@ module.exports = {
         new HtmlWebPackPlugin({  
             filename: 'motorics.html',
             template: './src/motorics.html',
-            chunks: ['app' , 'burger', 'slider', 'motorics'],
+            chunks: ['app' , 'burger', 'slider', 'motorics', 'progressiveImage'],
             favicon: './src/assets/images/logo.ico',
         }),
 
         new HtmlWebPackPlugin({  
             filename: 'languages.html',
             template: './src/languages.html',
-            chunks: ['app' , 'burger', 'slider', 'languages'],
+            chunks: ['app' , 'burger', 'slider', 'languages', 'progressiveImage'],
             favicon: './src/assets/images/logo.ico',
         }),
 
         new HtmlWebPackPlugin({  
             filename: 'preschool.html',
             template: './src/preschool.html',
-            chunks: ['app' , 'burger', 'slider', 'preschool'],
+            chunks: ['app' , 'burger', 'slider', 'preschool', 'progressiveImage'],
             favicon: './src/assets/images/logo.ico',
         }),
 
         new HtmlWebPackPlugin({  
             filename: 'creative.html',
             template: './src/creative.html',
-            chunks: ['app' , 'burger', 'slider', 'creative'],
+            chunks: ['app' , 'burger', 'slider', 'creative', 'progressiveImage'],
             favicon: './src/assets/images/logo.ico',
         }),
 
         new HtmlWebPackPlugin({  
             filename: 'music.html',
             template: './src/music.html',
-            chunks: ['app' , 'burger', 'slider', 'music'],
+            chunks: ['app' , 'burger', 'slider', 'music', 'progressiveImage'],
             favicon: './src/assets/images/logo.ico',
         }),
 
         new HtmlWebPackPlugin({  
             filename: 'cooking.html',
             template: './src/cooking.html',
-            chunks: ['app' , 'burger', 'slider', 'cooking'],
+            chunks: ['app' , 'burger', 'slider', 'cooking', 'progressiveImage'],
             favicon: './src/assets/images/logo.ico',
         }),
        
