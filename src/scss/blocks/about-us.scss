@@ -1,34 +1,31 @@
 #about-us {
     background: url('../assets/images/about-bottom.png') bottom repeat-x,
                 linear-gradient(to bottom, #F7F2F2 0%, #F7F2F2 95%, #F4F4F4 100%) center;
-    padding: 0 11% 7%;
-    margin-bottom: 44px;
+    padding: 0 0 100px;
+    margin: 0 auto 44px;
 }
 
 .about-us-header {
     @include header-h1;
-    width: 33%;
-    margin: 0;
-    margin-left: 67%;
+    width: auto;
+    text-align: center;
+    margin: 0 auto;
     padding: 0;
 }
 
 .about-wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     width: auto;
 }
 
 .about-experience {
-    width: 55%;
-    margin-top: -9%;
+    width: 780px;
+    margin: 0 auto;
     font-family: Oswald-Light, Arial, sans-serif;
-    font-size: 1.3vw;
+    font-size: 24px;
     font-weight: 300;
     line-height: 140%;
     background: url('../assets/images/achievment-list.png') top no-repeat;
-    background-size: 100% auto;
+    background-size: 90%;
 }
 
 .about-children-mobile {
@@ -36,12 +33,12 @@
 }
 
 .about-container {
-    width: 51%;
-    padding: 33% 17% 13% 31%;
+    width: 400px;
+    padding: 230px 105px 80px 220px;
 }
 
 .about-experience-group {
-    margin: 8% 0;
+    margin: 25px 0;
 }
 
 .about-experience-group span {
@@ -54,12 +51,12 @@
 }
 
 .experience-item {
-    padding: 0 0 5% 7.5%;
+    padding: 0 0 16px 24px;
     position: relative;
 }
 
 .experience-item:last-child {
-    padding-bottom: 2%;
+    padding-bottom: 6px;
     width: 270px;
 }
 
@@ -79,31 +76,21 @@
 }
 
 .about-achievements {
-    width: 33%;
+    width: auto;
     padding-top: 0;
-    padding-bottom: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .about-children {
     font-family: Oswald-Light, Arial, sans-serif;
     font-size: 24px;
     line-height: 140%;
-    width: 100%;
-    padding-bottom: 8.3%;
+    width: auto;
+    padding: 0 160px;
+    margin: 24px 0 0;
 }
 
 .about-children span {
     color: #FF6F3C;
-}
-
-.about-us-photo {
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.15), -10px -10px 15px #FFFFFF;
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
 }
 
 .about-knowledge--mobile {
@@ -111,53 +98,49 @@
 }
 
 @media screen and (max-width: 1000px) and (min-width: 413px) {
-    .about-us-header {
-        width: 100%;
-        margin: 0;
-        text-align: center;
+    .about-children {
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 799px) and (min-width: 470px) {
+    .experience-item::before {
+        top: 4px;
     }
 
-    .about-wrapper {
-        flex-direction: column;
+    .about-experience-group {
+        margin: 18px 0;
+    }
+
+    .about-container {
+        width: 300px;
+        padding: 230px 105px 100px 220px;
     }
 
     .about-experience {
-        width: 100%;
-        margin-top: 0;
-        font-size: 2vw;
-    }
-    
-    .about-achievements {
-        width: 100%;
-    }
-
-    .experience-item::before {
-        content: '';
-        position: absolute;
-        width: 8px;
-        height: 8px;
-        top: 10px;
-        left: 0;
-        background: #FF6F3C;
-        border-radius: 50%;
+        width: auto;
+        font-size: 18px;
+        background-size: 90%;
     }
 }
 
-@media screen and (max-width: 700px) and (min-width: 413px) {
-    .experience-item::before {
-        top: 4px;
+@media screen and (max-width: 680px) and (min-width: 470px) {
+    .about-container {
+        width: 250px;
+        padding: 200px 95px 100px 180px;
+    }
+
+    .about-experience-group {
+        margin: 10px 0;
+    }
+
+    .about-experience {
+        font-size: 16px;
+        background-size: 90%;
     }
 }
 
-@media screen and (max-width: 470px) and (min-width: 413px) {
-    .experience-item::before {
-        top: 4px;
-        width: 5px;
-        height: 5px;
-    }
-}
-
-@media screen and (max-width: 413px) {
+@media screen and (max-width: 600px) {
     #about-us {
         padding: 0 0 13%;
         margin-bottom: 0;
@@ -211,10 +194,6 @@
         width: 90%;
     }
 
-    .about-knowledge {
-        display: none;
-    }
-
     .experience-item::before {
         width: 5px;
         height: 5px;
@@ -229,6 +208,10 @@
 
     .about-children {
         display: none;
+    }
+
+    .about-knowledge {
+        margin-top: 25px;
     }
 
     .about-knowledge--mobile {
