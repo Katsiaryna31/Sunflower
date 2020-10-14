@@ -2,7 +2,7 @@ import logo from '../assets/images/logo-mobile.png';
 import earth from '../assets/images/earth.png';
 import earthMini from '../assets/images/earth-mini.png';
 import grass from '../assets/images/grass.png';
-import grassMini from '../assets/images/grass-mini.png'; 
+import grassMini from '../assets/images/grass-mini.png';
 import arrow from '../assets/images/arrow.png';
 import star from '../assets/images/star.png';
 import puzzle from '../assets/images/puzzle2.png';
@@ -47,7 +47,7 @@ const body = document.querySelector('body');
 
 mapContainer.addEventListener('click', () => {
     mapBig.classList.add('map--active');
-    body.style.overflow = 'hidden'; 
+    body.style.overflow = 'hidden';
 })
 
 mapButton.addEventListener('click', () => {
@@ -72,10 +72,25 @@ const activitiesLink = document.querySelector('.activities-link');
 activitiesLink.addEventListener('click', (e) => {
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         e.preventDefault();
-      } else {
+    } else {
         activitiesLink.href = "#activities";
     }
 })
 
-
-
+const contactForm = document.getElementById('sendmailform');
+contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    console.log('submit');
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "/sendmail.php");
+    xhr.onload = function (event) {
+        alert("Повідомлення надіслано");
+    };
+    xhr.onerror = function (event) {
+        alert("Виникла помилка. Спробуй пізніше");
+    };
+    // or onerror, onabort
+    var formData = new FormData(document.getElementById("sendmailform"));
+    xhr.send(formData);
+    console.log(formData);
+});

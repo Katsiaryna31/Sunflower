@@ -9,7 +9,7 @@
     <link rel="preload" href="assets/fonts/Oswald-ExtraLight.ttf" as="font" crossorigin="anonymous">
     <link rel="preload" href="assets/fonts/Oswald-Medium.ttf" as="font" crossorigin="anonymous">
     <link rel="preload" href="assets/fonts/Oswald-Regular.ttf" as="font" crossorigin="anonymous">
-    <title>Sunflower</title>
+    <title>Група інтенсивного розвитку "Соняшник"</title>
 </head>
 <body> 
     <header class="header">
@@ -272,7 +272,7 @@
                         </p>
                         <p class="slider-author">Оксана Кондратенко</p>
                     </div>
-                    <div class="slider-second">
+                    <!-- <div class="slider-second">
                         <div class="stars">
                             <img class="star" width="30" height="30" alt="star">
                             <img class="star" width="30" height="30" alt="star">
@@ -285,7 +285,7 @@
                             Подобалося все, харчування по справжньому домашню і смачне (дитина просив будинку садіковскіх їжу)), персонал уважний, є медсестра !, дуже цікаві та креативні заняття.
                         </p>
                         <p class="slider-author">Оксана Кондратенко</p>
-                    </div>
+                    </div> -->
                     </div>
                 </div>
                 <button class="slider-right">
@@ -300,10 +300,11 @@
             </p>
             <div class="callback-container">
                 <div class="callback-form">
-                    <form class="form" action="#" method="POST">
+                    <form id="sendmailform" class="form">
+                        <input type="hidden" name="submit" value="true"/>
                         <input class="input-form" type="text" name="name" placeholder="Введіть ваше ім'я">
                         <input class="input-form" type="email" name="email" placeholder="Введіть ваш email">
-                        <textarea class="input-form" cols="20" rows="7" placeholder="Повідомлення..."></textarea>
+                        <textarea class="input-form" name="message" cols="20" rows="7" placeholder="Повідомлення..."></textarea>
                         <input type="submit" class="submit-button" value="Вiдправити">
                     </form>
                 </div>
