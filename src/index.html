@@ -302,11 +302,16 @@
                 <div class="callback-form">
                     <form id="sendmailform" class="form">
                         <input type="hidden" name="submit" value="true"/>
-                        <input class="input-form" type="text" name="name" placeholder="Введіть ваше ім'я">
-                        <input class="input-form" type="email" name="email" placeholder="Введіть ваш email">
-                        <textarea class="input-form" name="message" cols="20" rows="7" placeholder="Повідомлення..."></textarea>
+                        <input class="input-form" type="text" name="name" placeholder="Введіть ваше ім'я" required>
+                        <input class="input-form" type="email" name="email" placeholder="Введіть ваш email" required>
+                        <textarea class="input-form" name="message" cols="20" rows="7" placeholder="Повідомлення..." required></textarea>
                         <input type="submit" class="submit-button" value="Вiдправити">
                     </form>
+                    <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+                    <div id="popup">
+                        <p class="popup-text"></p>
+                        <button class="submit-button popup-button">OK</button>
+                    </div>
                 </div>
                 <div class="callback-map">
                     <img class="callback-image" alt="map">
