@@ -53,15 +53,14 @@ module.exports = {
             options: {
                 name: 'assets/fonts/[name].[ext]'
             }
+        }, {
+            test: /\.(png|jpe?g|svg|gif)$/i,
+            loader: 'file-loader',
+            options: {
+                name: 'assets/images/[name].[ext]?[contenthash]'
+            }
         },
         {
-            test: /\.(png|jpe?g|svg|gif)$/i,
-            loader: 'url-loader',
-            options: {
-                name: 'assets/[name].[ext]',
-                publicPath: 'public/'
-            },
-        }, {
             test: /\.scss$/,
             use: [
                 'style-loader',

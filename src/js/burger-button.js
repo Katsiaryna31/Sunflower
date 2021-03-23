@@ -1,8 +1,3 @@
-import burgerButton from '../assets/images/burger-button.svg';
-
-const menuButton = document.querySelector('.burger-button');
-menuButton.src = burgerButton;
-
 const menu = document.querySelector('.menu');
 
 menuButton.addEventListener('click', () => {
