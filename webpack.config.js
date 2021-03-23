@@ -9,13 +9,7 @@ module.exports = {
         burger: './src/js/burger-button',
         feedbackSlider: './src/js/feedback-slider',
         slider: './src/js/slider',
-        sport: './src/js/sport',
-        motorics: './src/js/motorics',
-        languages: './src/js/languages',
-        preschool: './src/js/preschool',
-        creative: './src/js/creative',
-        music: './src/js/music',
-        cooking: './src/js/cooking',
+        activities: './src/js/activities',
         progressiveImage: './src/js/progressive-image',
     },
     output: {
@@ -113,49 +107,49 @@ module.exports = {
         new HtmlWebPackPlugin({  
             filename: 'sport.html',
             template: './src/sport.html',
-            chunks: ['app' , 'burger', 'slider', 'sport', 'progressiveImage'],
+            chunks: ['app' , 'burger', 'slider', 'activities', 'progressiveImage'],
             favicon: './src/assets/images/logo.ico',
         }),
 
         new HtmlWebPackPlugin({  
             filename: 'motorics.html',
             template: './src/motorics.html',
-            chunks: ['app' , 'burger', 'slider', 'motorics', 'progressiveImage'],
+            chunks: ['app' , 'burger', 'slider', 'activities', 'progressiveImage'],
             favicon: './src/assets/images/logo.ico',
         }),
 
         new HtmlWebPackPlugin({  
             filename: 'languages.html',
             template: './src/languages.html',
-            chunks: ['app' , 'burger', 'slider', 'languages', 'progressiveImage'],
+            chunks: ['app' , 'burger', 'slider', 'activities', 'progressiveImage'],
             favicon: './src/assets/images/logo.ico',
         }),
 
         new HtmlWebPackPlugin({  
             filename: 'preschool.html',
             template: './src/preschool.html',
-            chunks: ['app' , 'burger', 'slider', 'preschool', 'progressiveImage'],
+            chunks: ['app' , 'burger', 'slider', 'activities', 'progressiveImage'],
             favicon: './src/assets/images/logo.ico',
         }),
 
         new HtmlWebPackPlugin({  
             filename: 'creative.html',
             template: './src/creative.html',
-            chunks: ['app' , 'burger', 'slider', 'creative', 'progressiveImage'],
+            chunks: ['app' , 'burger', 'slider', 'activities', 'progressiveImage'],
             favicon: './src/assets/images/logo.ico',
         }),
 
         new HtmlWebPackPlugin({  
             filename: 'music.html',
             template: './src/music.html',
-            chunks: ['app' , 'burger', 'slider', 'music', 'progressiveImage'],
+            chunks: ['app' , 'burger', 'slider', 'activities', 'progressiveImage'],
             favicon: './src/assets/images/logo.ico',
         }),
 
         new HtmlWebPackPlugin({  
             filename: 'cooking.html',
             template: './src/cooking.html',
-            chunks: ['app' , 'burger', 'slider', 'cooking', 'progressiveImage'],
+            chunks: ['app' , 'burger', 'slider', 'activities', 'progressiveImage'],
             favicon: './src/assets/images/logo.ico',
         }),
        
