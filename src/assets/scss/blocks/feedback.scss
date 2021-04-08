@@ -1,0 +1,179 @@
+#feedbacks {
+    background: url('../images/sky-feedback.png') top no-repeat,
+                url('../images/feedback-elements.png') no-repeat,
+                 #FFEAE0;
+    background-size: auto cover;
+    padding-bottom: 54px;
+    width: 100%;
+}
+
+#feedbacks > p {
+    padding: 115px 0 75px;
+    margin: 0;
+    @include header-h1;
+    text-align: center;
+}
+
+.slider-container {
+    display: flex;
+    width: 37%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.slider-cover {
+    width: 70%;
+}
+
+.stars {
+    text-align: center;
+}
+
+.slider-left {
+    background: transparent;
+    border: none;
+}
+
+.slider-right {
+    background: transparent;
+    border: none;
+    transform: rotate(180deg);
+}
+
+.slider-header {
+    @include header-h2;
+    color: #FF6F3C;
+    text-align: center;
+    margin: 21px 0 23px;
+}
+
+.slider-text {
+    @include text2;
+    text-align: center;
+    padding-bottom: 26px;
+    margin: 0;
+    position: relative;
+}
+
+.slider-text::after {
+    content: '';
+    width: 242px;
+    height: 6px;
+    background-color: #FF6F3C;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+}
+
+.slider-author {
+    @include header-h5;
+    margin: 0;
+    padding-top: 23px;
+    text-align: center;
+}
+
+.swipe {
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+  }
+  .swipe-wrap {
+    overflow: hidden;
+    position: relative;
+  }
+  .swipe-wrap > div {
+    float: left;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+@media screen and (max-width: 1500px) {
+    #feedbacks {
+        background: url('../images/sky-feedback.png') top no-repeat,
+                url('../images/feedback-elements.png') bottom no-repeat,
+                 #FFEAE0;
+        background-size: contain;
+    }
+
+    .slider-container {
+        display: flex;
+        width: 70%;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #feedbacks {
+        background: url('../images/sky-feedback-mini.png') top no-repeat,
+                    url('../images/feedback-elements-mini.png') bottom no-repeat,
+                     #FFEAE0;
+        background-size: 100%, cover;
+        padding-bottom: 54px;
+        width: 100%;
+    }
+
+    #feedbacks > p {
+        padding: 20px 0 10px;
+    }
+
+    .slider-container {
+        display: flex;
+        width: 70%;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #feedbacks {
+        background-size: 100%, contain;
+    }
+
+    #feedbacks > p {
+        font-size: 36px;
+    }
+
+    .slider-container {
+        width: 181px;
+    }
+    
+    .slider-cover {
+        width: 100%;
+    }
+
+    .slider-left,
+    .slider-right {
+        display: none;
+    }
+
+    .stars {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .star {
+        width: 18px;
+        height: 18px;
+    }
+
+    .slider-header {
+        font-size: 14px;
+    }
+
+    .slider-text {
+        font-size: 10px; 
+    }
+
+    .slider-text::after {
+        width: 150px;
+        height: 3px;
+        left: 15px;
+    }
+    
+    .slider-author {
+        font-size: 14px;
+    }
+}

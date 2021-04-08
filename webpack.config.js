@@ -4,16 +4,16 @@ const HtmlWebPackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     entry: {
-        app: './src/index.js',
-        main: './src/js/main',
-        burger: './src/js/burger-button',
-        feedbackSlider: './src/js/feedback-slider',
-        slider: './src/js/slider',
-        activities: './src/js/activities',
-        progressiveImage: './src/js/progressive-image',
+        app: './src/assets/js/index.js',
+        main: './src/assets/js/main',
+        burger: './src/assets/js/burger-button',
+        feedbackSlider: './src/assets/js/feedback-slider',
+        slider: './src/assets/js/slider',
+        activities: './src/assets/js/activities',
+        progressiveImage: './src/assets/js/progressive-image',
     },
     output: {
-        filename: '[name].js',
+        filename: 'assets/js/[name].js',
         path: path.resolve(__dirname, './dist'),
         library: '[name]'
     },
@@ -45,13 +45,13 @@ module.exports = {
             test: /\.(ttf)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
             loader: 'file-loader',
             options: {
-                name: 'assets/fonts/[name].[ext]'
+                name: '../fonts/[name].[ext]'
             }
         }, {
             test: /\.(png|jpe?g|svg|gif)$/i,
             loader: 'file-loader',
             options: {
-                name: 'assets/images/[name].[ext]?[contenthash]'
+                name: '../images/[name].[ext]?[contenthash]',
             }
         },
         {
@@ -64,7 +64,7 @@ module.exports = {
                     options: { sourceMap: true }
                 }, {
                     loader: 'postcss-loader',
-                    options: { sourceMap: true, config: { path: 'src/js/postcss.config.js' } }
+                    options: { sourceMap: true, config: { path: 'src/assets/js/postcss.config.js' } }
                 }, {
                     loader: 'sass-loader',
                     options: { sourceMap: true }
@@ -76,14 +76,13 @@ module.exports = {
                 'style-loader',
                 MiniCssExtractPlugin.loader,
                 {
-                    loader: 'css-loader',
-                    options: { sourceMap: true }
+                    loader:'css-loader',
+                    options: { sourceMap: true},
                 }, {
                     loader: 'postcss-loader',
-                    options: { sourceMap: true, config: { path: 'src/js/postcss.config.js' } }
+                    options: { sourceMap: true, config: { path: 'src/assets/js/postcss.config.js' } }
                 }
-            ]
-
+            ],
         }]
     },
     devServer: {
@@ -93,7 +92,7 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: "[name].css"
+            filename: "assets/css/[name].css"
         }),
 
         new HtmlWebPackPlugin({

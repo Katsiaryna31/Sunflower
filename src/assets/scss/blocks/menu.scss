@@ -1,0 +1,183 @@
+.menu {
+    width: 65%;
+    position: absolute;
+    top: 60px;
+    left: 17%;
+    z-index: 5;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.menu-item a {
+    font-family: Amatic, Arial, sans-serif;
+    font-size: 36px;
+    line-height: 140%;
+    color: #3E3C3C;
+    text-decoration: none;
+}
+
+.menu-item:hover a,
+.menu-item--active a {
+    color: #FF6F3C;
+}
+
+.menu-item--logo {
+    position: relative;
+}
+
+.menu-item--logo::before {
+    content: '';
+    width: 180px;
+    height: 75px;
+    position: absolute;
+    background: url('../images/part-sunflower.png');
+    background-size: 180px 75px;
+    top: -67px;
+    left: -40px;
+}
+
+.menu-item--logo::after {
+    content: '';
+    width: 180px;
+    height: 75px;
+    position: absolute;
+    background: url('../images/part-sunflower.png');
+    transform: rotate(180deg);
+    background-size: 180px 75px;
+    top: 45px;
+    left: -40px;
+}
+
+.menu-item--exersices {
+    position: relative;
+}
+
+.menu-item--exersices:hover  .menu-exersices {
+    display: block;
+    text-align: right;
+}
+
+.menu-item--exersices:hover  .menu-exersice a{
+    color: #3E3C3C;  
+}
+
+.menu-exersice a{
+    font-family: Oswald-Light, Arial, sans-serif;
+    font-size: 24px; 
+}
+
+.menu-item--exersices:hover .menu-exersice:hover a {
+    color: #FF6F3C;
+    text-decoration: underline;
+}
+
+.menu-exersices {
+    display: none;
+    position: absolute;
+    z-index: 101;
+    width: 179px;
+    height: 238px;
+    top: 50px;
+    left: -50px;
+    background: rgba(229, 229, 229, 0.6);
+    list-style: none;
+    padding: 8px;
+}
+
+@media screen and (max-width: 1125px) and (min-width: 630px) {
+    .menu {
+        width: 90%;
+        left: 5%;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .menu {
+        width: 100%;
+        left: 0;
+    }
+
+    .menu-item a {
+        font-size: 24px;
+    }
+
+    .menu-item--logo::before {
+        width: 92px;
+        height: 40px;
+        background-size: 92px 40px;
+        background-repeat: no-repeat;
+        top: -35px;
+        left: -13px;
+    }
+    
+    .menu-item--logo::after {
+        width: 92px;
+        height: 40px;
+        background-size: 92px 40px;
+        background-repeat: no-repeat;
+        top: 30px;
+        left: -10px;
+    }
+
+    .menu-exersice a{
+        font-family: Oswald-Light, Arial, sans-serif;
+        font-size: 10px; 
+    }
+
+    .menu-exersices {
+        width: 80px;
+        height: 130px;
+        top: 30px;
+        left: -30px;
+        padding: 4px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .menu {
+        display: none;
+    } 
+
+    .menu--open {
+        display: block;
+        position: relative;
+        top: 0;
+        min-height: 200px;
+        background: #FCE2CF;
+    }
+    
+    .menu-list {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0;
+    }
+
+    .menu-item:nth-child(3) {
+        display: none;
+    }
+    
+    .menu-item a {
+        font-size: 36px;
+    }
+
+    .menu-exersices {
+        display: none;
+        position: absolute;
+        z-index: 101;
+        width: 179px;
+        height: 238px;
+        top: -130px;
+        left: 100px;
+        background: transparent;
+        padding: 3px;
+    }
+
+    .menu-exersice a{
+        font-size: 24px; 
+    }
+}

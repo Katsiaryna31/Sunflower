@@ -1,0 +1,41 @@
+@mixin zero-space () {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+@mixin header-h1 () {
+    font-family: Amatic, Arial, sans-serif;
+    font-size: 64px;
+    line-height: 140%;
+    color: #3E3C3C;
+}
+
+@mixin header-h2 () {
+  font-family: Amatic, Arial, sans-serif;
+  font-size: 36px;
+  line-height: 140%;
+}
+
+@mixin text1 () {
+  font-family: Oswald-Light, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 140%;
+}
+
+@mixin text2 () {
+  font-family: Oswald-Light, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+@mixin button () {
+  font-family: Oswald-Medium, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+@mixin header-h5 () {
+  font-family: Oswald-Regular, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 140%;
+}

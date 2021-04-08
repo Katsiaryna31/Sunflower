@@ -1,0 +1,44 @@
+#popup {
+    position: absolute;
+    display: none;
+    width: 250px;
+    height: 100px;
+    top: 330px;
+    left: 120px;
+    border: 2px solid #ff6f3c;
+    border-radius: 15px;
+    background: rgba(255,255,255, 0.7);
+}
+
+.popup-text {
+    @include header-h5;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.popup-button {
+    width: 240px;
+    margin: 0 5px;
+    padding: 5px 0 5px;
+}
+
+@media screen and (max-width: 1640px) {
+    #popup {
+        left: 16%;
+        top: 320px;
+    }
+}
+
+@media screen and (max-width: 1590px) and (min-width: 1015px) {
+    #popup {
+        left: 15%;
+        top: 320px;
+    }
+}
+
+@media (max-width: 1015px) {
+    #popup {
+        left: 40px;
+        top: 250px;
+    }
+}
