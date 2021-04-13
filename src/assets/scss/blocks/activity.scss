@@ -148,7 +148,7 @@
     position: absolute;
     width: 50px;
     height: 50px; 
-    background: url('../assets/images/slider-left.png');
+    background: url('../images/slider-left.png');
     background-position: center;
     border: none;
     bottom: 12%;
@@ -204,21 +204,21 @@
 }
 
 .info-address::before {
-    background: url('../assets/images/pin.png');
+    background: url('../images/pin.png');
     background-size: 15px 25px;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .info-phone::before {
-    background: url('../assets/images/call.png');
+    background: url('../images/call.png');
     background-size: 21px 24px;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .info-mail::before {
-    background: url('../assets/images/mail.png');
+    background: url('../images/mail.png');
     background-size: 20px 25px;
     background-repeat: no-repeat;
     background-position: center;

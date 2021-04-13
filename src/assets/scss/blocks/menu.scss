@@ -35,7 +35,7 @@
     width: 180px;
     height: 75px;
     position: absolute;
-    background: url('../assets/images/part-sunflower.png');
+    background: url('../images/part-sunflower.png');
     background-size: 180px 75px;
     top: -67px;
     left: -40px;
@@ -46,7 +46,7 @@
     width: 180px;
     height: 75px;
     position: absolute;
-    background: url('../assets/images/part-sunflower.png');
+    background: url('../images/part-sunflower.png');
     transform: rotate(180deg);
     background-size: 180px 75px;
     top: 45px;
@@ -166,16 +166,14 @@
     }
 
     .menu-exersices {
-        display: none;
-        position: absolute;
-        z-index: 101;
-        width: 179px;
-        height: 238px;
-        top: -130px;
-        left: 100px;
+        display: block;
+        position: static;
+        height: auto;
+        width: auto;
         background: transparent;
-        padding: 3px;
+        padding: 8px;
     }
+
 
     .menu-exersice a{
         font-size: 24px; 

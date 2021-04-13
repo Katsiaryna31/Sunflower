@@ -2,7 +2,7 @@
     width: 100%;
 }
 
-.groups-header {
+#groups > p {
     margin: 0;
     padding: 177px 0 10px;
     font-family: Amatic, Arial, sans-serif;
@@ -10,12 +10,12 @@
     line-height: 140%;
     color: #3E3C3C;
     text-align: center;
-    background: url('../assets/images/group-background.png');
+    background: url('../images/group-background.png');
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
-.groups-header span {
+#groups > p span {
     color: #FF6F3C;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .group-train {
-    background: url('../assets/images/train.png') top center no-repeat;
+    background: url('../images/train.png') top center no-repeat;
     background-size: 1950px auto;
     z-index: 5;
     width: auto;
@@ -118,7 +118,7 @@
         background: #FCE2CF;
     }
 
-    .groups-header {
+    #groups > p {
         margin: 0;
         padding: 0 10px;
         background: transparent;
@@ -127,7 +127,7 @@
 
 @media screen and (max-width: 1010px) {
     .group-train {
-        background: url('../assets/images/train-mini.png') top center no-repeat;
+        background: url('../images/train-mini.png') top center no-repeat;
         background-size: contain;
     }
 
@@ -190,7 +190,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    .groups-header {
+    #groups > p {
         font-size: 32px;
     }
 
@@ -199,8 +199,73 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 450px) {
     .group-container {
-        margin-top: -245px;
+        margin-top: 0;
+    }
+
+    .group-train {
+        display: none;
+    }
+
+    .group-container {
+        flex-direction: column;
+    }
+
+    .group-baby {
+        position: relative;
+        margin: 290px auto 0;
+        width: 280px;
+    }
+
+    .group-child {
+        position: relative;
+        margin: 290px auto 0;
+        width: 280px;
+    }
+
+    .group-preschooler {
+        position: relative;
+        margin: 290px auto 0;
+        width: 280px;
+    }
+
+    .group-name,
+    .group-age,
+    .group-description {
+        font-size: 16px;
+    }
+
+    .group-baby::after {
+        content: "";
+        position: absolute;
+        background: url('../images/carriage1.png') top center no-repeat;
+        background-size: contain;
+        width: 320px;
+        height: 287px;
+        top: -275px;
+        left: -20px;
+    }
+
+    .group-child::after {
+        content: "";
+        position: absolute;
+        background: url('../images/carriage2.png') top center no-repeat;
+        background-size: contain;
+        width: 320px;
+        height: 287px;
+        top: -275px;
+        left: -20px;
+    }
+
+    .group-preschooler::after {
+        content: "";
+        position: absolute;
+        background: url('../images/carriage3.png') top center no-repeat;
+        background-size: contain;
+        width: 320px;
+        height: 287px;
+        top: -275px;
+        left: -20px;
     }
 }

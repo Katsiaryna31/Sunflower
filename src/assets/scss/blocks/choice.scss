@@ -5,13 +5,13 @@
     margin-bottom: -90px;
 }
 
-.choice-header {
+#choice > p {
     margin: 0;
     @include header-h1;
     text-align: center;
 }
 
-.choice-header span {
+#choice > p span {
     color: #FF6F3C;
 }
 
@@ -51,27 +51,27 @@
 }
 
 .choice-item--individual::before {
-    background: url('../assets/images/individual.png');
+    background: url('../images/individual.png');
 }
 
 .choice-item--hours::before {
-    background: url('../assets/images/alarm.png');
+    background: url('../images/alarm.png');
 }
 
 .choice-item--outside::before {
-    background: url('../assets/images/bus.png');
+    background: url('../images/bus.png');
 }
 
 .choice-item--area::before {
-    background: url('../assets/images/school.png');
+    background: url('../images/school.png');
 }
 
 .choice-item--home::before {
-    background: url('../assets/images/house.png');
+    background: url('../images/house.png');
 }
 
 .choice-item--food::before {
-    background: url('../assets/images/food.png');
+    background: url('../images/food.png');
 }
 
 @media screen and (max-width: 1250px) and (min-width: 570px) {
@@ -89,7 +89,7 @@
         margin-bottom: 0;
     }
 
-    .choice-header {
+    #choice > p {
         font-size: 36px;
         width: 335px;
         margin: 0 auto;

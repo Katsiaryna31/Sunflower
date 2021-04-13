@@ -1,9 +1,5 @@
-import burgerButton from '../assets/images/burger-button.svg';
-
-const menuButton = document.querySelector('.burger-button');
-menuButton.src = burgerButton;
-
 const menu = document.querySelector('.menu');
+const menuButton = document.querySelector('.burger-button');
 
 menuButton.addEventListener('click', () => {
     if (menuButton.classList.contains('burger-button--open')) {

@@ -3,29 +3,30 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Головна - Група інтенсивного розвитку "Соняшник"</title>
+    <meta name="description" content="Приватний дитячій садок Іва́но-Франкі́вськ">
     <link rel="preload" href="assets/fonts/AmaticSC-Bold.ttf" as="font" crossorigin="anonymous">
     <link rel="preload" href="assets/fonts/Oswald-Light.ttf" as="font" crossorigin="anonymous">
     <link rel="preload" href="assets/fonts/Oswald-ExtraLight.ttf" as="font" crossorigin="anonymous">
     <link rel="preload" href="assets/fonts/Oswald-Medium.ttf" as="font" crossorigin="anonymous">
     <link rel="preload" href="assets/fonts/Oswald-Regular.ttf" as="font" crossorigin="anonymous">
-    <title>Група інтенсивного розвитку "Соняшник"</title>
 </head>
 <body> 
     <header class="header">
-        <a href="#"><img class="logo-mobile" alt="logo" width="92" height="92"></a>
+        <img class="logo-mobile" src="./assets/images/logo-mobile.png" alt="logo" width="92" height="92">
         <div class="header-container">
             <div class="header-phone">
                 <a href="tel:+380979732620">+38(097)9732620</a>
             </div>
         </div>
-        <img class="burger-button" alt="menu" width="40" height="40">
+        <img class="burger-button" src="./assets/images/burger-button.svg" alt="menu" width="40" height="40">
     </header>
     <nav class="menu">
         <ul class="menu-list">
             <li class="menu-item"><a href="#about-us">Про нас</a></li>
             <li class="menu-item"><a href="#groups">Групи</a></li>
             <li class="menu-item menu-item--logo"><a href="#">Соняшник</a></li>
-            <li class="menu-item menu-item--exersices"><a class="activities-link">Заняття</a>
+            <li class="menu-item menu-item--exersices"><a href="#activities">Заняття</a>
                 <ul class="menu-exersices">
                     <li class="menu-exersice"><a href="sport.html">Спортивнi</a></li>
                     <li class="menu-exersice"><a href="motorics.html">Розвиваючi моторику</a></li>
@@ -43,26 +44,28 @@
         <section class="main-section">
             <div class="main-wrapper">
                 <div class="main-container">
-                    <h1 class="main-header">Група інтенсивного розвитку
-                        <span>"Соняшник"</span>
-                    </h1>
+                    <div class="main-header">
+                        <h1 class=>Група інтенсивного розвитку
+                            <span>"Соняшник"</span>
+                        </h1>
+                    </div>
                     <p class="main-description">
                         “З маленького  зернятка виростає соняшник”
                     </p>
                     <a class="main-button" href="#callback">Напишіть нам</a>
                 </div>
                 <picture class="earth">
-                    <source class="mini-earth" media="(max-width: 413px)">
-                    <img class="earth-image" alt="children">
+                    <source class="mini-earth" srcset="./assets/images/earth-mini.png" media="(max-width: 413px)">
+                    <img class="earth-image" src="./assets/images/earth.png" alt="children">
                 </picture>
             </div>
             <picture class="grass">
-                <source class="mini-grass" media="(max-width: 413px)">
-                <img class="main-grass" alt="grass">
+                <source class="mini-grass" srcset="./assets/images/grass-mini.png" media="(max-width: 413px)">
+                <img class="main-grass" src="./assets/images/grass.png" alt="grass">
             </picture>
         </section>
         <section id="about-us">
-            <h2 class="about-us-header">Про нас</h2>
+            <p>Про нас</p>
             <div class="about-wrapper">
                 <div class="about-achievements">
                     <p class="about-children">
@@ -90,7 +93,7 @@
             </div>
         </section>
         <section id='choice'>
-            <h2 class="choice-header">Чому батьки вибирають “<span>соняшник</span>”?</h2>
+            <p>Чому батьки вибирають “<span>соняшник</span>”?</p>
             <ul class="choice-list">
                 <li class="choice-item choice-item--individual">Індивідуальні навчальні програми</li>
                 <li class="choice-item choice-item--hours">Годинні групи</li>
@@ -101,13 +104,13 @@
             </ul>
         </section>
         <section id='groups'>
-            <h2 class="groups-header">Наші групи</h2>
+            <p>Наші групи</p>
             <div class="group-main-container">
                <div class="group-train"></div>
                 <div class="group-container">
                     <div class="group-baby">
                         <div class="group-wrapper">
-                            <h3 class="group-name">"Малятко"</h3>
+                            <p class="group-name">"Малятко"</p>
                             <p class="group-age">1,6 - 3 рокі</p>
                         </div>
                         <div class="group-description">
@@ -116,7 +119,7 @@
                     </div>
                     <div class="group-child">
                         <div class="group-wrapper">
-                            <h3 class="group-name">"Дослідники"</h3>
+                            <p class="group-name">"Дослідники"</p>
                             <p class="group-age">3 - 5 років</p>
                         </div>
                         <div class="group-description">
@@ -126,7 +129,7 @@
                     </div>
                     <div class="group-preschooler">
                         <div class="group-wrapper">
-                            <h3 class="group-name">"Майбутні школярики"</h3>
+                            <p class="group-name">"Майбутні школярики"</p>
                             <p class="group-age">5 - 6 років</p>
                         </div>
                         <div class="group-description">
@@ -139,12 +142,12 @@
             </div>
         </section>
         <section id="activities">
-            <h2 class="activities-header">Заняття в групі інтенсивного розвитку <span>"соняшник"</span></h2>
+            <p>Заняття в групі інтенсивного розвитку <span>"соняшник"</span></p>
             <ul class="activities-list">
                 <li class="activities-item activities-item-sport">
                     <div class="activities-background activities-background-sport"></div>
                     <div class="activities-content">
-                        <h3>Спортивнi</h3>
+                        <p>Спортивнi</p>
                         <div class="activities-item--active activities-sport-active">
                             <ul class="active-list">
                                 <li class="active-item">Кінний спорт</li>
@@ -159,7 +162,7 @@
                 <li class="activities-item activities-item-motor">
                     <div class="activities-background activities-background-motor"></div>
                     <div class="activities-content">
-                        <h3>Розвиваючi моторику</h3>
+                        <p>Розвиваючi моторику</p>
                         <div class="activities-item--active activities-motor-active">
                             <ul class="active-list">
                                 <li class="active-item">Аплікація</li>
@@ -173,7 +176,7 @@
                 <li class="activities-item activities-item-languages">
                     <div class="activities-background activities-background-languages"></div>
                     <div class="activities-content">
-                        <h3>Іноземні Мови</h3>
+                        <p>Іноземні Мови</p>
                         <div class="activities-item--active activities-languages-active">
                             <ul class="active-list">
                                 <li class="active-item">Німецька мова</li>
@@ -187,7 +190,7 @@
                 <li class="activities-item activities-item-preschool">
                     <div class="activities-background activities-background-preschool"></div>
                     <div class="activities-content">
-                        <h3>Підготовка До Школи</h3>
+                        <p>Підготовка До Школи</p>
                         <div class="activities-item--active activities-preschool-active">
                             <ul class="active-list">
                                 <li class="active-item">Логiка</li>
@@ -208,7 +211,7 @@
                 <li class="activities-item activities-item-creative">
                     <div class="activities-background activities-background-creative"></div>
                     <div class="activities-content">
-                        <h3>Креативні</h3>
+                        <p>Креативні</p>
                         <div class="activities-item--active activities-creative-active">
                             <ul class="active-list">
                                 <li class="active-item">Заняття з малювання</li>
@@ -223,7 +226,7 @@
                 <li class="activities-item activities-item-music">
                     <div class="activities-background activities-background-music"></div>
                     <div class="activities-content">
-                        <h3>Музичне Виховання</h3>
+                        <p>Музичне Виховання</p>
                         <div class="activities-item--active activities-music-active">
                             <ul class="active-list">
                                 <li class="active-item">Музичні основи</li>
@@ -237,7 +240,7 @@
                 <li class="activities-item activities-item-cooking">
                     <div class="activities-background activities-background-cooking"></div>
                     <div class="activities-content">
-                        <h3>Кулінария</h3>
+                        <p>Кулінария</p>
                         <div class="activities-item--active activities-cooking-active">
                             <ul class="active-list">
                                 <li class="active-item">Приготування їжі та основи гостинності</li>
@@ -250,22 +253,22 @@
             </ul>
         </section>
         <section id="feedbacks">
-            <h2 class="feedbacks-header">Відгуки батьків</h2>
+            <p>Відгуки батьків</p>
             <div class="slider-container">
                 <button class="slider-left">
-                    <img class="slider-left-button" width="60" height="60" alt="button left">
+                    <img class="slider-left-button" src="./assets/images/arrow.png" width="60" height="60" alt="button left">
                 </button>
                 <div class="slider-cover swipe"  id="slider">
                     <div class="swipe-wrap">
                     <div class="slider-first">
                         <div class="stars">
-                            <img class="star" width="30" height="30" alt="star">
-                            <img class="star" width="30" height="30" alt="star">
-                            <img class="star" width="30" height="30" alt="star">
-                            <img class="star" width="30" height="30" alt="star">
-                            <img class="star" width="30" height="30" alt="star">
+                            <img class="star" src="./assets/images/star.png" width="30" height="30" alt="star">
+                            <img class="star" src="./assets/images/star.png" width="30" height="30" alt="star">
+                            <img class="star" src="./assets/images/star.png" width="30" height="30" alt="star">
+                            <img class="star" src="./assets/images/star.png" width="30" height="30" alt="star">
+                            <img class="star" src="./assets/images/star.png" width="30" height="30" alt="star">
                         </div>
-                        <h3 class="slider-header">Кращий дитячий сад</h3>
+                        <p class="slider-header">Кращий дитячий сад</p>
                         <p class="slider-text">Кращі емоції в житті дитини! Дякую за турботу, виховання і догляд. Водили дитину з 2х років до 5-ти. 
                             Подобалося все, харчування по справжньому домашню і смачне (дитина просив будинку садіковскіх їжу)), персонал уважний, є медсестра !, дуже цікаві та креативні заняття.
                         </p>
@@ -279,7 +282,7 @@
                             <img class="star" width="30" height="30" alt="star">
                             <img class="star" width="30" height="30" alt="star">
                         </div>
-                        <h3 class="slider-header">Кращий дитячий сад</h3>
+                        <p class="slider-header">Кращий дитячий сад</p>
                         <p class="slider-text">Кращі емоції в житті дитини! Дякую за турботу, виховання і догляд. Водили дитину з 2х років до 5-ти. 
                             Подобалося все, харчування по справжньому домашню і смачне (дитина просив будинку садіковскіх їжу)), персонал уважний, є медсестра !, дуже цікаві та креативні заняття.
                         </p>
@@ -288,12 +291,12 @@
                     </div>
                 </div>
                 <button class="slider-right">
-                    <img class="slider-right-button" width="60" height="60" alt="button right">
+                    <img class="slider-right-button" src="./assets/images/arrow.png" width="60" height="60" alt="button right">
                 </button>
             </div>
         </section>
         <section id="callback">
-            <h2 class="callback-header">Контакт</h2>
+            <p>Контакт</p>
             <p class="callback-questions">
                 Залишилися питання? Напишіть нам 
             </p>
@@ -313,7 +316,7 @@
                     </div>
                 </div>
                 <div class="callback-map">
-                    <img class="callback-image" alt="map">
+                    <img class="callback-image" src="./assets/images/puzzle2.png" alt="map">
                     <div class="callback-details">
                         <p class="callback-address">м.Івано-франківськ, с.Микитинці, в. Вишнева,20</p>
                         <p class="callback-phone">+380979732620, +38095722772</p>
@@ -324,7 +327,7 @@
             <div id="map" class="map-big">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2622.467155208326!2d24.749622462392132!3d48.9064912561958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4730c3e825eba70f%3A0x104721f98547aa44!2z0JLQuNGI0L3RkdCy0LDRjyDRg9C7LiwgMjAsINCd0LjQutC40YLQuNC90YbRiywg0JjQstCw0L3Qvi3QpNGA0LDQvdC60L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsCwgNzY0OTQ!5e0!3m2!1sru!2sby!4v1590168661328!5m2!1sru!2sby" width="1440" height="820"  allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 <button class="map-button">
-                    <img class="map-close" width="60" height="60" alt="close map">
+                    <img class="map-close" src="./assets/images/cross.svg" width="60" height="60" alt="close map">
                 </button>
             </div>
         </section>

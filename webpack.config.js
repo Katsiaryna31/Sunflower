@@ -4,22 +4,16 @@ const HtmlWebPackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     entry: {
-        app: './src/index.js',
-        main: './src/js/main',
-        burger: './src/js/burger-button',
-        feedbackSlider: './src/js/feedback-slider',
-        slider: './src/js/slider',
-        sport: './src/js/sport',
-        motorics: './src/js/motorics',
-        languages: './src/js/languages',
-        preschool: './src/js/preschool',
-        creative: './src/js/creative',
-        music: './src/js/music',
-        cooking: './src/js/cooking',
-        progressiveImage: './src/js/progressive-image',
+        app: './src/assets/js/index.js',
+        main: './src/assets/js/main',
+        burger: './src/assets/js/burger-button',
+        feedbackSlider: './src/assets/js/feedback-slider',
+        slider: './src/assets/js/slider',
+        activities: './src/assets/js/activities',
+        progressiveImage: './src/assets/js/progressive-image',
     },
     output: {
-        filename: '[name].js',
+        filename: 'assets/js/[name].js',
         path: path.resolve(__dirname, './dist'),
         library: '[name]'
     },
@@ -51,17 +45,16 @@ module.exports = {
             test: /\.(ttf)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
             loader: 'file-loader',
             options: {
-                name: 'assets/fonts/[name].[ext]'
+                name: '../fonts/[name].[ext]'
+            }
+        }, {
+            test: /\.(png|jpe?g|svg|gif)$/i,
+            loader: 'file-loader',
+            options: {
+                name: '../images/[name].[ext]?[contenthash]',
             }
         },
         {
-            test: /\.(png|jpe?g|svg|gif)$/i,
-            loader: 'url-loader',
-            options: {
-                name: 'assets/[name].[ext]',
-                publicPath: 'public/'
-            },
-        }, {
             test: /\.scss$/,
             use: [
                 'style-loader',
@@ -71,7 +64,7 @@ module.exports = {
                     options: { sourceMap: true }
                 }, {
                     loader: 'postcss-loader',
-                    options: { sourceMap: true, config: { path: 'src/js/postcss.config.js' } }
+                    options: { sourceMap: true, config: { path: 'src/assets/js/postcss.config.js' } }
                 }, {
                     loader: 'sass-loader',
                     options: { sourceMap: true }
@@ -83,14 +76,13 @@ module.exports = {
                 'style-loader',
                 MiniCssExtractPlugin.loader,
                 {
-                    loader: 'css-loader',
-                    options: { sourceMap: true }
+                    loader:'css-loader',
+                    options: { sourceMap: true},
                 }, {
                     loader: 'postcss-loader',
-                    options: { sourceMap: true, config: { path: 'src/js/postcss.config.js' } }
+                    options: { sourceMap: true, config: { path: 'src/assets/js/postcss.config.js' } }
                 }
-            ]
-
+            ],
         }]
     },
     devServer: {
@@ -100,7 +92,7 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: "[name].css"
+            filename: "assets/css/[name].css"
         }),
 
         new HtmlWebPackPlugin({
@@ -114,49 +106,49 @@ module.exports = {
         new HtmlWebPackPlugin({  
             filename: 'sport.html',
             template: './src/sport.html',
-            chunks: ['app' , 'burger', 'slider', 'sport', 'progressiveImage'],
+            chunks: ['app' , 'burger', 'slider', 'activities', 'progressiveImage'],
             favicon: './src/assets/images/logo.ico',
         }),
 
         new HtmlWebPackPlugin({  
             filename: 'motorics.html',
             template: './src/motorics.html',
-            chunks: ['app' , 'burger', 'slider', 'motorics', 'progressiveImage'],
+            chunks: ['app' , 'burger', 'slider', 'activities', 'progressiveImage'],
             favicon: './src/assets/images/logo.ico',
         }),
 
         new HtmlWebPackPlugin({  
             filename: 'languages.html',
             template: './src/languages.html',
-            chunks: ['app' , 'burger', 'slider', 'languages', 'progressiveImage'],
+            chunks: ['app' , 'burger', 'slider', 'activities', 'progressiveImage'],
             favicon: './src/assets/images/logo.ico',
         }),
 
         new HtmlWebPackPlugin({  
             filename: 'preschool.html',
             template: './src/preschool.html',
-            chunks: ['app' , 'burger', 'slider', 'preschool', 'progressiveImage'],
+            chunks: ['app' , 'burger', 'slider', 'activities', 'progressiveImage'],
             favicon: './src/assets/images/logo.ico',
         }),
 
         new HtmlWebPackPlugin({  
             filename: 'creative.html',
             template: './src/creative.html',
-            chunks: ['app' , 'burger', 'slider', 'creative', 'progressiveImage'],
+            chunks: ['app' , 'burger', 'slider', 'activities', 'progressiveImage'],
             favicon: './src/assets/images/logo.ico',
         }),
 
         new HtmlWebPackPlugin({  
             filename: 'music.html',
             template: './src/music.html',
-            chunks: ['app' , 'burger', 'slider', 'music', 'progressiveImage'],
+            chunks: ['app' , 'burger', 'slider', 'activities', 'progressiveImage'],
             favicon: './src/assets/images/logo.ico',
         }),
 
         new HtmlWebPackPlugin({  
             filename: 'cooking.html',
             template: './src/cooking.html',
-            chunks: ['app' , 'burger', 'slider', 'cooking', 'progressiveImage'],
+            chunks: ['app' , 'burger', 'slider', 'activities', 'progressiveImage'],
             favicon: './src/assets/images/logo.ico',
         }),
        

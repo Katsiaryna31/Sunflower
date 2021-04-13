@@ -1,12 +1,12 @@
 #callback {
-    background: url('../assets/images/callback-background.png') top no-repeat,
+    background: url('../images/callback-background.png') top no-repeat,
                 #F7F2F2;
     background-size: contain;
     padding-bottom: 67px;
     position: relative;
 }
 
-.callback-header {
+#callback > p:first-child {
     padding: 110px 0 0;
     margin: 0;
     @include header-h1;
@@ -30,7 +30,7 @@
 }
 
 .callback-form {
-    background: url('../assets/images/puzzle1.png') no-repeat;
+    background: url('../images/puzzle1.png') no-repeat;
     background-size: contain;
     width: 694px;
     height: auto;
@@ -66,7 +66,7 @@
     position: absolute;
     top: -3px;
     left: 17px;
-    background: url('../assets/images/placeholder-icon.png') no-repeat;
+    background: url('../images/placeholder-icon.png') no-repeat;
     width: 34px;
     height: 34px;
 }
@@ -76,7 +76,7 @@
     position: absolute;
     top: -3px;
     left: 17px;
-    background: url('../assets/images/phone.png') no-repeat;
+    background: url('../images/phone.png') no-repeat;
     width: 34px;
     height: 34px;
 }
@@ -86,7 +86,7 @@
     position: absolute;
     top: -3px;
     left: 17px;
-    background: url('../assets/images/mail.png') no-repeat;
+    background: url('../images/mail.png') no-repeat;
     width: 34px;
     height: 34px;
 }
@@ -194,13 +194,13 @@
 
 @media screen and (max-width: 1015px) {
     #callback {
-        background: url('../assets/images/callback-mini.png') top no-repeat,
+        background: url('../images/callback-mini.png') top no-repeat,
                     #F7F2F2;
         background-size: contain;
         padding-bottom: 20px;
     }
 
-    .callback-header {
+    #callback > p:first-child {
         padding: 20px 0 0;
     }
 
@@ -209,7 +209,7 @@
     }
 
     .callback-form {
-        background: url('../assets/images/puzzle1-mini.png') no-repeat;
+        background: url('../images/puzzle1-mini.png') no-repeat;
         background-size: contain;
         width: 335px;
     }
@@ -300,7 +300,7 @@
 }
 
 @media screen and (max-width: 400px) {
-    .callback-header {
+    #callback > p:first-child {
         font-size: 36px;
     }
     
@@ -319,5 +319,20 @@
 
     .callback-details {
         top: -5px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .callback-image {
+        margin-top: -130px;
+        width: 310px;
+    }
+
+    .form {
+        padding: 140px 30px 30px;
+    }
+
+    .submit-button {
+        margin-top: 2px;
     }
 }
