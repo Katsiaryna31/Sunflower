@@ -224,3 +224,43 @@
         margin: 0 auto;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .about-experience-group {
+        margin: 4px 0 0;
+    }
+
+    .about-experience {
+        font-size: 12px;
+    }
+
+    .experience-list {
+        margin: 4px;
+    }
+    
+    .experience-item {
+        padding-bottom: 3px;
+    }
+
+    .about-knowledge {
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .about-children-mobile {
+        margin-bottom: 3px;
+    }
+
+    .experience-list {
+        margin: 0;
+    }
+
+    .experience-item {
+        padding-bottom: 1px;
+    }
+
+    .about-knowledge {
+        margin-top: 0;
+    }
+}

@@ -199,8 +199,73 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 450px) {
     .group-container {
-        margin-top: -245px;
+        margin-top: 0;
+    }
+
+    .group-train {
+        display: none;
+    }
+
+    .group-container {
+        flex-direction: column;
+    }
+
+    .group-baby {
+        position: relative;
+        margin: 290px auto 0;
+        width: 280px;
+    }
+
+    .group-child {
+        position: relative;
+        margin: 290px auto 0;
+        width: 280px;
+    }
+
+    .group-preschooler {
+        position: relative;
+        margin: 290px auto 0;
+        width: 280px;
+    }
+
+    .group-name,
+    .group-age,
+    .group-description {
+        font-size: 16px;
+    }
+
+    .group-baby::after {
+        content: "";
+        position: absolute;
+        background: url('../images/carriage1.png') top center no-repeat;
+        background-size: contain;
+        width: 320px;
+        height: 287px;
+        top: -275px;
+        left: -20px;
+    }
+
+    .group-child::after {
+        content: "";
+        position: absolute;
+        background: url('../images/carriage2.png') top center no-repeat;
+        background-size: contain;
+        width: 320px;
+        height: 287px;
+        top: -275px;
+        left: -20px;
+    }
+
+    .group-preschooler::after {
+        content: "";
+        position: absolute;
+        background: url('../images/carriage3.png') top center no-repeat;
+        background-size: contain;
+        width: 320px;
+        height: 287px;
+        top: -275px;
+        left: -20px;
     }
 }

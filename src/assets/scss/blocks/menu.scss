@@ -166,16 +166,14 @@
     }
 
     .menu-exersices {
-        display: none;
-        position: absolute;
-        z-index: 101;
-        width: 179px;
-        height: 238px;
-        top: -130px;
-        left: 100px;
+        display: block;
+        position: static;
+        height: auto;
+        width: auto;
         background: transparent;
-        padding: 3px;
+        padding: 8px;
     }
+
 
     .menu-exersice a{
         font-size: 24px; 

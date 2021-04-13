@@ -321,3 +321,18 @@
         top: -5px;
     }
 }
+
+@media screen and (max-width: 340px) {
+    .callback-image {
+        margin-top: -130px;
+        width: 310px;
+    }
+
+    .form {
+        padding: 140px 30px 30px;
+    }
+
+    .submit-button {
+        margin-top: 2px;
+    }
+}

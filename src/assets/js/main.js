@@ -11,30 +11,10 @@ mapContainer.addEventListener('click', () => {
 })
 
 mapButton.addEventListener('click', () => {
-    mapBig.classList.remove('map--active');
-    body.style.overflow = 'visible';
-})
-
-const activitiesItemList = document.querySelectorAll('.activities-item');
-const activitiesActiveList = document.querySelectorAll('.activities-item--active');
-activitiesItemList.forEach((activitiesItem) => {
-    activitiesItem.addEventListener('touch', () => {
-        activitiesActiveList.forEach((activeElement) => {
-            activeElement.style.display = 'none';
-        });
-        const activitiesItemActive = activitiesItem.querySelector('.activities-item--active');
-        activitiesItemActive.style.display = 'block';
-    });
-})
-
-
-const activitiesLink = document.querySelector('.activities-link');
-activitiesLink.addEventListener('click', (e) => {
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        e.preventDefault();
-    } else {
-        activitiesLink.href = "#activities";
+    if (mapBig.classList.contains('map--active')) {
+        mapBig.classList.remove('map--active');
     }
+    body.style.overflow = 'visible';
 })
 
 const contactForm = document.getElementById('sendmailform');
