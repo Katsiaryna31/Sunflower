@@ -23,11 +23,45 @@
     padding-top: 30px;
     position: relative;
     z-index: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-languages {
+    padding-left: 10%;
+    display: flex;
+    margin-top: -10px;
+}
+
+.language-button {
+    font-family: Oswald-Medium, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    color: #3E3C3C;
+    padding: 12px;
+    background: #FF6F3C;
+    text-transform: uppercase;
+    height: 50px;
+    border: none;
+    
+}
+
+.rus-language {
+    border-radius: 5px 0 0 5px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.ukr-language {
+    border-radius: 0 5px 5px 0;
+    text-transform: uppercase;
+    margin: 0;
+    border-left: 0.5px solid black;
 }
 
 .header-phone {
     position: relative;
-    float: right;
     padding-right: 17.5%;
 }
 
@@ -67,6 +101,17 @@
     .header-phone a {
         font-size: 10px;
     }
+
+    .header-languages {
+        margin-top: -6px;
+    }
+
+
+    .language-button {
+        font-size: 10px;
+        height: 37px;
+        padding: 10px;
+    }
 }
 
 @media screen and (max-width: 414px) and (min-width: 200px){
@@ -79,13 +124,17 @@
         background: url('../images/sky-mobile.png');
         height: 116px;
         background-size: cover;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 10px;
     }
 
     .logo-mobile {
         display: block;
         position: absolute;
-        top: 31px;
-        left: 20px;
+        top: 10px;
+        left: 5px;
         z-index: 3;
         cursor: pointer;
     }
@@ -103,6 +152,11 @@
         transform: rotate(90deg);
     }
 
+    .header-languages {
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+
     .header-phone {
         position: relative;
         float: none;
@@ -113,6 +167,11 @@
 
     .header-phone a {
         font-size: 10px;
+    }
+
+    .language-button {
+        font-size: 10px;
+        height: 37px;
     }
 
 }
