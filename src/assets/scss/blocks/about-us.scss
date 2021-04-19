@@ -53,6 +53,7 @@
 .experience-item {
     padding: 0 0 16px 24px;
     position: relative;
+    margin: 0;
 }
 
 .experience-item:last-child {
@@ -69,10 +70,6 @@
     left: 0;
     background: #FF6F3C;
     border-radius: 50%;
-}
-
-.experience-item {
-    margin: 0;
 }
 
 .about-achievements {

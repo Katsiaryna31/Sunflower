@@ -151,6 +151,13 @@ module.exports = {
             chunks: ['app' , 'burger', 'slider', 'activities', 'progressiveImage'],
             favicon: './src/assets/images/logo.ico',
         }),
+
+        new HtmlWebPackPlugin({  
+            filename: '404page.html',
+            template: './src/404page.html',
+            chunks: ['app' , 'main', 'burger'],
+            favicon: './src/assets/images/logo.ico',
+        }),
        
     ],
 

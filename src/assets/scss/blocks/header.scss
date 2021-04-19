@@ -45,14 +45,18 @@
     text-transform: uppercase;
     height: 50px;
     border: none; 
+    height: 24px;
+    text-decoration: none;
 }
 
 .language-button:hover {
     opacity: 1.0; 
+    border: none;
 }
 
 .language-button--active {
     opacity: 1.0;
+    border: none;
 }
 
 .language-button:disabled {
@@ -121,7 +125,7 @@
 
     .language-button {
         font-size: 10px;
-        height: 37px;
+        height: 17px;
         padding: 10px;
     }
 }
@@ -183,7 +187,7 @@
 
     .language-button {
         font-size: 10px;
-        height: 37px;
+        height: 13px;
     }
 
 }
