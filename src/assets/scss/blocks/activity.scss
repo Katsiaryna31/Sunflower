@@ -1,5 +1,6 @@
 .activity-body {
     background: #FCE2CF;
+    position: relative;
 }
 
 .activity-header {
@@ -12,6 +13,45 @@
 .menu-activity {
     position: fixed;
     top: 60px;
+}
+
+.breadcrumbs {
+    position: absolute;
+    list-style: none;
+    top: -40px;
+    left: 143px;
+    z-index: 10;
+}
+
+.breadcrumbs li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+.breadcrumbs a {
+    font-family: Oswald-Light, Arial, sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+	color: #111111;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+	color: #FF6F3C;
+}
+
+.breadcrumbs li:not(:last-child):after {
+	content: "»";
+	padding: 0px 6px;
+	text-decoration: none;
+}
+
+.breadcrumbs-current {
+    font-family: Oswald-Light, Arial, sans-serif;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 20px;
 }
 
 .activity-main {
@@ -29,6 +69,7 @@
     position: relative;
     z-index: 1;
 }
+
 
 .slider {
     overflow: hidden;
@@ -70,7 +111,8 @@
     padding-top: 300px;
 }
 
-.slider-name {
+.slider-name,
+.slider-name a{
     @include header-h5;
     color: #FF6F3C;
 }
@@ -230,8 +272,20 @@
 }
 
 @media screen and (max-width: 1700px) and (min-width: 1350px) {
+    .breadcrumbs a {
+        font-size: 16px;
+        line-height: 18px;
+        color: #111111;
+    }
+    
+    .breadcrumbs-current {
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
     .activity-main-header {
-        margin-top: 140px;
+        margin-top: 200px;
     }
 
     .slider-description {
@@ -243,15 +297,32 @@
     }
 
     .slider-number {
-        bottom: 0;
+        bottom: 5%;
     }
     
     .slider__control {
-        bottom: 5%;
+        bottom: 9%;
     }
 }
 
 @media screen and (max-width: 1350px) and (min-width: 1270px) {
+    .breadcrumbs {
+        left: 60px;
+        top: -20px;
+    }
+
+    .breadcrumbs a {
+        font-size: 16px;
+        line-height: 18px;
+        color: #111111;
+    }
+    
+    .breadcrumbs-current {
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
     .activity-main-header {
         padding-left: 100px;
         margin-top: 140px;
@@ -290,6 +361,28 @@
         margin-top: 110px;
     }
 
+    .breadcrumbs {
+        left: 60px;
+        top: -20px;
+    }
+
+    .breadcrumbs a {
+        font-size: 16px;
+        line-height: 18px;
+        color: #111111;
+    }
+    
+    .breadcrumbs-current {
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .breadcrumbs {
+        top: -10px;
+        left: 50px;
+    }
+
     .slider-description {
         padding-left: 90px;
         padding-top: 250px;
@@ -326,6 +419,24 @@
     .menu-activity {
         position: relative;
         top: -80px;
+    }
+
+    .breadcrumbs {
+        position: relative;
+        top: 10px;
+        left: 60px;
+    }
+
+    .breadcrumbs a {
+        font-size: 18px;
+        line-height: 20px;
+        color: #111111;
+    }
+    
+    .breadcrumbs-current {
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 20px;
     }
 
     .activity-main {
@@ -393,6 +504,14 @@
     }
 }
 
+@media screen and (max-width: 620px) {
+    .breadcrumbs {
+        position: relative;
+        top: 10px;
+        left: 10px;
+    }
+}
+
 @media screen and (max-width: 414px) {
     .activity-header {
         position: relative;
@@ -402,6 +521,18 @@
 
     .menu-activity {
         position: relative;
+    }
+
+    .breadcrumbs a {
+        font-size: 14px;
+        line-height: 16px;
+        color: #111111;
+    }
+    
+    .breadcrumbs-current {
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 16px;
     }
 
     .activity-main {
@@ -463,6 +594,3 @@
         bottom: 0;
     }
 }
-
-
-

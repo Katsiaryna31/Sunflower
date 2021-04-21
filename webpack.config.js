@@ -158,6 +158,13 @@ module.exports = {
             chunks: ['app' , 'main', 'burger'],
             favicon: './src/assets/images/logo.ico',
         }),
+
+        new HtmlWebPackPlugin({  
+            filename: 'tenis.html',
+            template: './src/tenis.html',
+            chunks: ['app' , 'main', 'burger'],
+            favicon: './src/assets/images/logo.ico',
+        }),
        
     ],
 

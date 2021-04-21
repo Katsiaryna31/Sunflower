@@ -1,0 +1,55 @@
+.info-main {
+    padding: 0 160px;
+}
+
+.info-main-header {
+    @include header-h1;
+    width: 450px;
+    padding: 0;
+    margin: 0;
+}
+
+.info-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+}
+
+.info-description {
+    @include text2; 
+    font-size: 24px;
+    padding-bottom: 65px;
+    margin-bottom: 0;
+}
+
+.info-bold {
+    font-weight: bold;
+}
+
+.info-image {
+    width: auto;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+.info-header {
+    @include header-h2;
+    color: #FF6F3C;
+    text-align: center;
+    margin: 21px 0 23px;
+}
+
+.info-question {
+    @include header-h5;
+    font-size: 28px;
+    color: #FF6F3C;
+}
+
+.info-answer {
+    @include text2;
+    text-align: left;
+    padding-bottom: 26px;
+    margin: 0;
+    position: relative;
+}
