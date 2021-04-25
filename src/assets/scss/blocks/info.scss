@@ -2,6 +2,15 @@
     padding: 0 160px;
 }
 
+.info-breadcrumbs {
+    position: relative;
+    width: 70%;
+    list-style: none;
+    top: 0;
+    left: 143px;
+    z-index: 10;
+}
+
 .info-main-header {
     @include header-h1;
     width: 450px;
@@ -57,6 +66,10 @@
     padding-bottom: 26px;
     margin: 0;
     position: relative;
+}
+
+.info-answer ul {
+    padding-left: 0;
 }
 
 @media screen and (max-width: 1335px) {

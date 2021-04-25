@@ -165,7 +165,41 @@ module.exports = {
             chunks: ['app' , 'main', 'burger'],
             favicon: './src/assets/images/logo.ico',
         }),
-       
+
+        new HtmlWebPackPlugin({  
+            filename: 'preschool-education.html',
+            template: './src/preschool-education.html',
+            chunks: ['app' , 'main', 'burger'],
+            favicon: './src/assets/images/logo.ico',
+        }),
+
+        new HtmlWebPackPlugin({  
+            filename: 'kindergarden.html',
+            template: './src/kindergarden.html',
+            chunks: ['app' , 'main', 'burger'],
+            favicon: './src/assets/images/logo.ico',
+        }),
+
+        new HtmlWebPackPlugin({  
+            filename: 'camp.html',
+            template: './src/camp.html',
+            chunks: ['app' , 'main', 'burger'],
+            favicon: './src/assets/images/logo.ico',
+        }),
+        
+        new HtmlWebPackPlugin({  
+            filename: 'child-center.html',
+            template: './src/child-center.html',
+            chunks: ['app' , 'main', 'burger'],
+            favicon: './src/assets/images/logo.ico',
+        }),
+
+        new HtmlWebPackPlugin({  
+            filename: 'main.html',
+            template: './src/main.html',
+            chunks: ['app' , 'main', 'burger'],
+            favicon: './src/assets/images/logo.ico',
+        }),
     ],
 
 }

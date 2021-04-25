@@ -1,8 +1,9 @@
 .menu {
-    width: 65%;
+    width: 90%;
     position: absolute;
     top: 60px;
-    left: 17%;
+    left: 0;
+    padding: 0 5% 0;
     z-index: 5;
 }
 
@@ -11,6 +12,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     list-style: none;
+    padding-left: 0;
 }
 
 .menu-item a {
@@ -79,9 +81,9 @@
 .menu-exersices {
     display: none;
     position: absolute;
-    z-index: 101;
+    z-index: 105;
     width: 179px;
-    height: 238px;
+    height: 170px;
     top: 50px;
     left: -50px;
     background: rgba(229, 229, 229, 0.6);
@@ -89,10 +91,37 @@
     padding: 8px;
 }
 
-@media screen and (max-width: 1125px) and (min-width: 630px) {
+@media screen and (max-width: 1300px) {
+    .menu-item a {
+        font-size: 26px;
+    }
+
+    .menu-item--logo a {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 940px) {
     .menu {
-        width: 90%;
-        left: 5%;
+        flex-wrap: wrap;
+        top: 80px;
+    }
+
+    .break {
+        flex-basis: 100%;
+        height: 0;
+    }
+
+    .menu-item {
+        padding-right: 20px;
+    }
+
+    .menu-item:nth-child(1) {
+        display: none;
+    }
+
+    .menu-item a {
+        font-size: 22px;
     }
 }
 
@@ -103,7 +132,7 @@
     }
 
     .menu-item a {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .menu-item--logo::before {
@@ -138,7 +167,7 @@
     }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 415px) {
     .menu {
         display: none;
     } 
@@ -157,12 +186,17 @@
         margin: 0;
     }
 
-    .menu-item:nth-child(3) {
+    .menu-item:nth-child(1) {
         display: none;
     }
     
     .menu-item a {
         font-size: 36px;
+    }
+
+    .menu-item--exersices:hover  .menu-exersices {
+        display: block;
+        text-align: left;
     }
 
     .menu-exersices {
