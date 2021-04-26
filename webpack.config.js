@@ -200,6 +200,27 @@ module.exports = {
             chunks: ['app' , 'main', 'burger'],
             favicon: './src/assets/images/logo.ico',
         }),
+
+        new HtmlWebPackPlugin({  
+            filename: 'eidetic.html',
+            template: './src/eidetic.html',
+            chunks: ['app' , 'main', 'burger'],
+            favicon: './src/assets/images/logo.ico',
+        }),
+
+        new HtmlWebPackPlugin({  
+            filename: 'english-courses.html',
+            template: './src/english-courses.html',
+            chunks: ['app' , 'main', 'burger'],
+            favicon: './src/assets/images/logo.ico',
+        }),
+
+        new HtmlWebPackPlugin({  
+            filename: 'sports-activities.html',
+            template: './src/sports-activities.html',
+            chunks: ['app' , 'main', 'burger'],
+            favicon: './src/assets/images/logo.ico',
+        }),
     ],
 
 }
