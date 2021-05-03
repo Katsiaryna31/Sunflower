@@ -221,6 +221,13 @@ module.exports = {
             chunks: ['app' , 'main', 'burger'],
             favicon: './src/assets/images/logo.ico',
         }),
+
+        new HtmlWebPackPlugin({  
+            filename: 'blog.html',
+            template: './src/blog.html',
+            chunks: ['app' , 'main', 'burger'],
+            favicon: './src/assets/images/logo.ico',
+        }),
     ],
 
 }
