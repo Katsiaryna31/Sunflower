@@ -55,7 +55,7 @@
     "downloadjs": "^1.4.7",
     "dragula": "^3.7.3",
     "google-maps": "^4.3.3",
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^3.1.1",
     "progressive-image.js": "^1.6.0",
     "swipejs": "^2.3.1",
     "upng-js": "^2.1.0"
